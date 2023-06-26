@@ -58,6 +58,10 @@ const toggleMenu = () => {
 .brand img:nth-child(1) {
   margin-right: 1rem;
 }
+.brand img:nth-child(2) {
+  background-color: var(--green-100);
+  border-radius: 1rem;
+}
 
 .navbar-nav {
   margin-right: 2rem;

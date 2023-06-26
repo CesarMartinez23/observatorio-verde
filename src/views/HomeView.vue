@@ -1,9 +1,8 @@
 <script setup>
-
+import Carrousel from "../components/Home/Carrousel/Carrousel.vue";
 </script>
 
 <template>
-  <h1>Home</h1>
+  <Carrousel />
 </template>
 
-<style scoped></style>
