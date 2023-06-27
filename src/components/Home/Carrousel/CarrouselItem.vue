@@ -10,7 +10,7 @@ defineProps({
 
 <template>
   <div class="carousel-item" :class="[item.id == '1' ? 'active' :  '']" :data-bs-interval="item.intervalItem">
-    <img :src="`/src/assets/carrousel-images/${item.imageItem}`" :alt="item.imageAlt" />
+    <img :src="'/img/carrousel-images/' + item.imageItem" :alt="item.imageAlt" />
     <div class="carousel-caption mx-auto">
       <h5>{{ item.titleItem }}</h5>
       <p>{{ item.descriptionItem }}</p>
