@@ -31,7 +31,6 @@ const toggleMenu = () => {
               <RouterLink class="nav-link" :to="{ name: 'inicio' }">
                 Inicio</RouterLink>
             </li>
-
           </ul>
           <span class="navbar-text" @click="toggleMenu">
             <RouterLink class="btn" :to="{ name: '' }">Contactanos</RouterLink>
@@ -47,7 +46,7 @@ const toggleMenu = () => {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: var(--green);
+  background-color: #151515;
   padding: 0.4rem 2rem;
 }
 
@@ -59,7 +58,6 @@ const toggleMenu = () => {
   margin-right: 1rem;
 }
 .brand img:nth-child(2) {
-  background-color: var(--green-100);
   border-radius: 1rem;
 }
 
@@ -68,7 +66,7 @@ const toggleMenu = () => {
 }
 
 .nav-link {
-  color: var(--white);
+  color: #888888;
   transition: all 0.8s ease;
   padding: 1rem 1rem;
   margin: 0 1rem;
@@ -79,18 +77,18 @@ const toggleMenu = () => {
 }
 
 .btn {
-  background-color: var(--green-900);
+  background-color: #0CA554;
   color: var(--white);
-  border-radius: 1rem;
+  border-radius: 0;
   padding: 0.5rem 1rem;
   transition: all 0.8s ease;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
 .nav-link:hover,
 .btn:hover {
-  background-color: var(--green-900);
+  /*background-color: #000;*/
   color: var(--white);
   transform: scale(1.1);
 }

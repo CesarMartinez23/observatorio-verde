@@ -9,7 +9,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="carousel-item" :class="[item.id == '1' ? 'active' :  '']" :data-bs-interval="item.intervalItem">
+  <div class="carousel-item overlayed" :class="[item.id == '1' ? 'active' :  '']" :data-bs-interval="item.intervalItem">
     <img :src="'/img/carrousel-images/' + item.imageItem" :alt="item.imageAlt" />
     <div class="carousel-caption mx-auto">
       <h5>{{ item.titleItem }}</h5>
@@ -27,26 +27,58 @@ defineProps({
   object-fit: cover;
 }
 
+.overlayed {
+  position: relative;
+}
+
+.overlayed::before {
+  content: ' ';
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #00000070;
+}
+.overlayed::after {
+  content: ' ';
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #00000021;
+}
 .carousel-caption {
   position: absolute;
   width: 75%;
-  background-color: #e4dede;
   opacity: 0.8;
   border-radius: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 18rem;
+  z-index: 50;
+  text-align: left;
+  opacity: 1;
 }
 
-.carousel-caption h5,
-p {
-  color: var(--black);
-}
-
-.carousel-caption h5 {
-  font-size: 2.5rem;
+.carousel-caption h5{
+  color: var(--white);
+  font-size: 90px;
+  font-family: var(--font);
+  font-weight: 900;
+  line-height: 90px;
+  width: 50%;
 }
 
 .carousel-caption p {
-  font-size: 1.5rem;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: var(--letter-spacing2);
+  font-family: var(--font);
+  color: var(--white);
+  width: 70%;
 }
 
 .carousel-caption button {
@@ -54,14 +86,17 @@ p {
   border: none;
   color: var(--white);
   padding: 10px 20px;
-  border-radius: 10px;
+  border-radius: 0;
   font-size: 1.5rem;
   margin-top: 1rem;
+  z-index: 50;
+  text-align: left;
+  opacity: 1;
 }
 
 .carousel-caption button:hover {
-  background-color: var(--green-900);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--greenB);
 }
 
 @media (max-width: 767px) {

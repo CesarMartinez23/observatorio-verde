@@ -1,7 +1,7 @@
 <template>
   <section class="custom-container">
   <div class="container">
-    <h2 class="section-title">¿QUÉ HACEMOS?</h2>
+    <h2 class="section-title">¿Qué hacemos?</h2>
     <div class="row">
       <div class="col-lg-6 content-column">
         <div class="we-do">
@@ -9,7 +9,7 @@
             <i class="bi bi-award"></i>
           </div>
           <div>
-            <h2 class="we-do-title">Participación</h2>
+            <h2 class="we-do-title">Participar</h2>
             <p class="we-do-description lh-base">En congresos ambientales y así mantenernos informados y capacitados en los servicios para la zona oriental.</p>
           </div>
         </div>
@@ -70,10 +70,12 @@
 }
 
 .section-title {
-  color: var(--green-900);
+  color: var(--black);
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 2rem;
+  font-family: var(--font);
+  letter-spacing: var(--letter-spacing);
 }
 
 .we-do {
@@ -89,10 +91,13 @@
 }
 
 .we-do-title {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
   margin: 0;
-  color: var(--green-900);
+  color: var(--black);
+  text-align: left;
+  letter-spacing: var(--letter-spacing);
+  margin-top: 0.5rem;
 }
 
 .we-do-description {

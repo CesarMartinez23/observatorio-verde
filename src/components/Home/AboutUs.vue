@@ -11,7 +11,7 @@
           </div>
         </div>
         <div class="col-lg-6 content-column">
-          <h1 class="content-title">¿QUI&Eacute;NES SOMOS?</h1>
+          <h1 class="content-title">¿Qui&eacute;nes somos?</h1>
           <p class="content-description">
             A finales del año 2019, la Universidad Gerardo Barrios, a través de
             la Vicerrectoría de Investigación presentó el Observatorio Verde de
@@ -23,7 +23,7 @@
             de llevar acabo los Objetivos de Desarrollo Sostenibles desde El
             Salvador.
           </p>
-          <a href="#" class="btn content-button fw-bold">Documentos Relacionados</a>
+          <!--a href="#" class="btn content-button fw-bold">Documentos Relacionados</a-->
         </div>
       </div>
     </div>
@@ -32,7 +32,7 @@
 
 <style scoped>
 .custom-container {
-  background-color: var(--green);
+  background-color: var(--f4);
   padding: 4rem;
   text-align: center;
 }
@@ -65,25 +65,28 @@
 }
 
 .content-title {
-  color: var(--white);
+  color: var(--black);
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 2rem;
+  font-family: var(--font);
 }
 
 .content-description {
-  font-size: 1.4rem;
+  font-size: 1.0rem;
   margin-bottom: 2rem;
-  color: var(--white);
+  color: var(--gray);
   text-align: justify;
   text-justify: inter-word;
+  font-family: var(--font);
+  line-height: 30px;
 }
 
 .content-button {
   font-size: 1rem;
   padding: 1rem 2rem;
-  border-radius: 2rem;
-  background-color: var(--green-600);
+  border-radius: 0;
+  background-color: var(--greenB);
   color: var(--white);
   transition: all 0.3s ease-in-out;
   text-decoration: none;

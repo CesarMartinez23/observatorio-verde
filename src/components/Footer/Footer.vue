@@ -22,7 +22,7 @@
 
 <style scoped>
 .footer {
-  background-color: var(--green);
+  background-color: var(--black);
   padding: 1.5rem 0;
   font-size: 1rem;
   color: var(--white);
