@@ -82,7 +82,7 @@ defineProps({
 }
 
 .carousel-caption button {
-  background-color: var(--green);
+  background-color: var(--greenB);
   border: none;
   color: var(--white);
   padding: 10px 20px;
@@ -92,6 +92,8 @@ defineProps({
   z-index: 50;
   text-align: left;
   opacity: 1;
+  vertical-align: middle;
+  padding: 10px 50px 10px;
 }
 
 .carousel-caption button:hover {
@@ -113,4 +115,5 @@ defineProps({
     padding: 5px 10px;
   }
 }
+
 </style>

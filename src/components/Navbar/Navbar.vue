@@ -8,10 +8,9 @@ const toggleMenu = () => {
 
 </script>
 
-<template>
-  <header class="header">
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
+<template>  
+  <div class="top">
+    <div class="container">
         <div class="brand">
           <RouterLink class="navbar-brand" to="/">
             <!-- Logo UGB -->
@@ -19,7 +18,15 @@ const toggleMenu = () => {
             <!-- Logo Verde -->
             <img src="/img/logoVerde.png" alt="Logo Verde" />
           </RouterLink>
-        </div>
+          <span class="navbar-text" @click="toggleMenu" style="float:right">
+            <RouterLink class="btn" :to="{ name: '' }">Contactanos</RouterLink>
+          </span>
+        </div>        
+    </div>
+  </div>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">        
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#controlNav"
           aria-controls="controlNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -31,10 +38,11 @@ const toggleMenu = () => {
               <RouterLink class="nav-link" :to="{ name: 'inicio' }">
                 Inicio</RouterLink>
             </li>
+            <li class="nav-item">
+              <RouterLink class="nav-link" :to="{ name: 'inicio' }">
+                Proyectos</RouterLink>
+            </li>
           </ul>
-          <span class="navbar-text" @click="toggleMenu">
-            <RouterLink class="btn" :to="{ name: '' }">Contactanos</RouterLink>
-          </span>
         </div>
       </div>
     </nav>
@@ -46,7 +54,7 @@ const toggleMenu = () => {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: #151515;
+  background-color: #fff;
   padding: 0.4rem 2rem;
 }
 
@@ -66,18 +74,18 @@ const toggleMenu = () => {
 }
 
 .nav-link {
-  color: #888888;
+  color: var(--gray);
   transition: all 0.8s ease;
   padding: 1rem 1rem;
   margin: 0 1rem;
   border-radius: 0.5rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 500;
   text-align: center;
 }
 
 .btn {
-  background-color: #0CA554;
+  background-color: var(--greenB);
   color: var(--white);
   border-radius: 0;
   padding: 0.5rem 1rem;
@@ -99,8 +107,7 @@ const toggleMenu = () => {
 
 .nav-link:focus,
 .btn:focus {
-  background-color: var(--white);
-  color: var(--green-900);
+  color: var(--black);
   font-weight: 700;
   transition: all 0.8s ease;
 }
@@ -110,6 +117,7 @@ const toggleMenu = () => {
   outline: none;
   margin-right: 1rem;
   color: var(--white);
+  background-color: var(--greenB);
 }
 
 .navbar-toggler-icon {
@@ -160,5 +168,12 @@ const toggleMenu = () => {
     margin-right: 0;
   }
 
+}
+.top{
+  background-color: #000;
+  position: relative;
+  height: 10vh;
+  display: grid;
+  place-items: center;
 }
 </style>

@@ -87,7 +87,7 @@
 .we-do-icon {
   font-size: 2.5rem;
   margin-right: 0.5rem;
-  color: var(--green-900);
+  color: var(--greenB);
 }
 
 .we-do-title {

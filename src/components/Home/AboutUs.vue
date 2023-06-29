@@ -1,6 +1,9 @@
 <script setup></script>
 
-<template>
+<template>  
+  <div class="info">
+      <p>Ejecutamos proyectos para preservar ....</p>
+    </div>
   <main class="custom-container">
     <div class="container">
       <div class="row">
@@ -134,5 +137,18 @@
   .content-button {
     font-size: 1rem;
   }
+}
+.info{
+  display: block;
+  height: 7vh;
+  width: 100%;
+  background-color: var(--greenB);
+  font-size: 20px;
+  color: #ceffe5;
+  line-height: 28px;
+  letter-spacing: var(--letter-spacing2);
+  padding-top: 20px;
+  font-family: var(--font);
+  text-align: center;
 }
 </style>

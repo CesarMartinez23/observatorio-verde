@@ -25,7 +25,7 @@
   background-color: var(--black);
   padding: 1.5rem 0;
   font-size: 1rem;
-  color: var(--white);
+  color: var(--gray);
   /* position: relative;
   bottom: 0;
   width: 100%; */
