@@ -18,6 +18,20 @@
   --greenB: #0CA554;
   --font: "DM Sans", sans-serif;
   --gray: #9D9D9D;
+  --gray-200: #888888;
   --letter-spacing: -0.04em;
   --letter-spacing2: -0.01em;
+}
+.title {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--gray);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.bi-layers-fill {
+color: var(--greenB);
 }

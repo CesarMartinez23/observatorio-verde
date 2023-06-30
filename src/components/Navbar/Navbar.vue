@@ -19,21 +19,20 @@ const toggleMenu = () => {
             <img src="/img/logoVerde.png" alt="Logo Verde" />
           </RouterLink>
           <span class="navbar-text" @click="toggleMenu" style="float:right">
-            <RouterLink class="btn" :to="{ name: '' }">Contactanos</RouterLink>
+            <RouterLink class="btn" :to="{ name: '' }">Contáctanos</RouterLink>
           </span>
         </div>        
     </div>
   </div>
   <header class="header">
     <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">        
+      <div class="container">        
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#controlNav"
           aria-controls="controlNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="controlNav">
-          <ul class="navbar-nav ms-auto" @click="toggleMenu">
-
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" @click="toggleMenu">
             <li class="nav-item">
               <RouterLink class="nav-link" :to="{ name: 'inicio' }">
                 Inicio</RouterLink>
@@ -43,6 +42,36 @@ const toggleMenu = () => {
                 Proyectos</RouterLink>
             </li>
           </ul>
+          <!-- social links -->
+          <ul class="navbar-nav d-flex flex-row">
+                <!-- Icons -->
+                <li class="nav-item me-3 me-lg-0">
+                    <a class="nav-link" href="https://www.facebook.com/ugboficial/" target="_blank">
+                      <i class="bi bi-facebook"></i>
+                    </a>
+                </li>
+                <li class="nav-item me-3 me-lg-0">
+                    <a class="nav-link" href="https://www.instagram.com/ugb.sv/#" target="_blank">
+                      <i class="bi bi-instagram"></i>
+                    </a>
+                </li>
+                <li class="nav-item me-3 me-lg-0">
+                    <a class="nav-link" href="https://www.linkedin.com/company/ugb-sv/" target="_blank">
+                      <i class="bi bi-linkedin"></i>
+                    </a>
+                </li>
+                <li class="nav-item me-3 me-lg-0">
+                    <a class="nav-link" href="https://twitter.com/UGB_SV" target="_blank">
+                      <i class="bi bi-twitter"></i>
+                    </a>
+                </li>
+                <li class="nav-item me-3 me-lg-0">
+                    <a class="nav-link" href="https://www.youtube.com/user/VideosUGB" target="_blank">
+                      <i class="bi bi-youtube"></i>
+                    </a>
+                </li>               
+            </ul>
+
         </div>
       </div>
     </nav>
@@ -56,6 +85,7 @@ const toggleMenu = () => {
   z-index: 100;
   background-color: #fff;
   padding: 0.4rem 2rem;
+  box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.05);
 }
 
 .brand img {
@@ -92,12 +122,14 @@ const toggleMenu = () => {
   transition: all 0.8s ease;
   font-size: 1rem;
   font-weight: 500;
+  width: 18vh;
+  height: 5vh;
 }
 
 .nav-link:hover,
 .btn:hover {
-  /*background-color: #000;*/
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--black);
   transform: scale(1.1);
 }
 
@@ -117,7 +149,7 @@ const toggleMenu = () => {
   outline: none;
   margin-right: 1rem;
   color: var(--white);
-  background-color: var(--greenB);
+  background-color: var(--black);
 }
 
 .navbar-toggler-icon {

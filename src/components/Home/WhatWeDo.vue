@@ -1,6 +1,10 @@
 <template>
   <section class="custom-container">
   <div class="container">
+    <div class="secion-icon">
+        <i class="bi bi-layers-fill"></i>
+    </div>
+    <span class="title">Nuestras actividades</span>
     <h2 class="section-title">¿Qué hacemos?</h2>
     <div class="row">
       <div class="col-lg-6 content-column">
@@ -9,7 +13,7 @@
             <i class="bi bi-award"></i>
           </div>
           <div>
-            <h2 class="we-do-title">Participar</h2>
+            <h2 class="we-do-title">Participación</h2>
             <p class="we-do-description lh-base">En congresos ambientales y así mantenernos informados y capacitados en los servicios para la zona oriental.</p>
           </div>
         </div>
@@ -57,7 +61,7 @@
 .image-column img {
   width: 100%;
   height: 100%;
-  border-radius: 1rem;
+  border-radius: 0;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
   object-fit: cover;
 }
@@ -82,6 +86,7 @@
   display: flex;
   align-items: flex-start;
   margin-bottom: 0.5rem;
+  margin-right: 30px;
 }
 
 .we-do-icon {
@@ -105,6 +110,7 @@
   margin-top: 1rem;
   text-align: justify;
   text-justify: inter-word;
+  color: var(--gray-200);
 }
 
 @media (max-width: 991.98px) {
@@ -156,4 +162,5 @@
     font-size: 1.2rem;
   }
 }
+
 </style>

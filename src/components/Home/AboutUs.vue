@@ -7,14 +7,21 @@
   <main class="custom-container">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 video-column">
+        <div class="col-lg-7 video-column">
           <div class="video-wrapper">
             <iframe class="video" src="https://www.youtube.com/embed/vTou7sBeAaQ" frameborder="0"
-              allowfullscreen></iframe>
+              allowfullscreen></iframe>           
+          </div>        
+        </div>    
+        <div class="col-lg-5 content-column">
+          <div class="secion-icon">
+              <i class="bi bi-layers-fill"></i>
           </div>
-        </div>
-        <div class="col-lg-6 content-column">
-          <h1 class="content-title">¿Qui&eacute;nes somos?</h1>
+          <span class="title">Sobre nosotros</span>
+          <h1 class="content-title">
+            Conoce más <br />
+            sobre nosotros
+          </h1>
           <p class="content-description">
             A finales del año 2019, la Universidad Gerardo Barrios, a través de
             la Vicerrectoría de Investigación presentó el Observatorio Verde de
@@ -63,8 +70,7 @@
 .content-column {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: justify;
 }
 
 .content-title {
@@ -72,7 +78,7 @@
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 2rem;
-  font-family: var(--font);
+  font-family: var(--font); 
 }
 
 .content-description {
@@ -83,6 +89,8 @@
   text-justify: inter-word;
   font-family: var(--font);
   line-height: 30px;
+  padding-left: 5px;
+  padding-right: 40px;
 }
 
 .content-button {
@@ -151,4 +159,23 @@
   font-family: var(--font);
   text-align: center;
 }
+button {
+  background-color: var(--greenB);
+  border: none;
+  color: var(--white);
+  padding: 10px 20px;
+  border-radius: 0;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  z-index: 50;
+  text-align: left;
+  opacity: 1;
+  vertical-align: middle;
+  padding: 10px 50px 10px;
+}
+button:hover {
+  background-color: var(--white);
+  color: var(--greenB);
+}
+
 </style>

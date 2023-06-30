@@ -56,7 +56,7 @@ defineProps({
   width: 75%;
   opacity: 0.8;
   border-radius: 2rem;
-  margin-bottom: 18rem;
+  margin-bottom: 16rem;
   z-index: 50;
   text-align: left;
   opacity: 1;
@@ -66,7 +66,7 @@ defineProps({
   color: var(--white);
   font-size: 90px;
   font-family: var(--font);
-  font-weight: 900;
+  font-weight: 700;
   line-height: 90px;
   width: 50%;
 }
