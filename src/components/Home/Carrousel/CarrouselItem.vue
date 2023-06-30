@@ -64,7 +64,7 @@ defineProps({
 
 .carousel-caption h1{
   color: var(--white);
-  font-size: 110px;
+  font-size: 80px;
   font-family: var(--font);
   font-weight: 700;
   line-height: 90px;
