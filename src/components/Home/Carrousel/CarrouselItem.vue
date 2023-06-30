@@ -12,7 +12,7 @@ defineProps({
   <div class="carousel-item overlayed" :class="[item.id == '1' ? 'active' :  '']" :data-bs-interval="item.intervalItem">
     <img :src="'/img/carrousel-images/' + item.imageItem" :alt="item.imageAlt" />
     <div class="carousel-caption mx-auto">
-      <h5>{{ item.titleItem }}</h5>
+      <h1>{{ item.titleItem }}</h1>
       <p>{{ item.descriptionItem }}</p>
       <a :href="item.buttonLink" target="_blank"><button>{{ item.buttonText }}</button></a>
     </div>
@@ -62,13 +62,14 @@ defineProps({
   opacity: 1;
 }
 
-.carousel-caption h5{
+.carousel-caption h1{
   color: var(--white);
-  font-size: 90px;
+  font-size: 110px;
   font-family: var(--font);
   font-weight: 700;
   line-height: 90px;
   width: 50%;
+  letter-spacing: var(--letter-spacing);
 }
 
 .carousel-caption p {

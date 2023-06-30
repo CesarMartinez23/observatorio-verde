@@ -20,7 +20,7 @@
   --gray: #9D9D9D;
   --gray-200: #888888;
   --letter-spacing: -0.04em;
-  --letter-spacing2: -0.01em;
+  --letter-spacing2: 0.2em;
 }
 .title {
   position: relative;
