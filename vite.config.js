@@ -6,7 +6,6 @@ import vue from '@vitejs/plugin-vue'
 // https://vitejs.dev/config/
 export default defineConfig({
   base: "/observatorio-verde/",
-  publicPath: "/observatorio-verde/",
   plugins: [
     vue(),
   ],

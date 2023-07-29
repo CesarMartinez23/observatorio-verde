@@ -1,77 +1,125 @@
 <script setup>
-import { RouterLink } from 'vue-router'
+import { RouterLink } from "vue-router";
 
 const toggleMenu = () => {
-  const nav = document.querySelector('.navbar-collapse')
-  nav.classList.toggle('show')
-}
-
+  const nav = document.querySelector(".navbar-collapse");
+  nav.classList.toggle("show");
+};
 </script>
 
-<template>  
-  <div class="top">
-    <div class="container">
-        <div class="brand">
-          <RouterLink class="navbar-brand" to="/">
-            <!-- Logo UGB -->
-            <img src="/img/logoUGB.png" alt="Logo UGB" />
-            <!-- Logo Verde -->
-            <img src="/img/logoVerde.png" alt="Logo Verde" />
-          </RouterLink>
-          <span class="navbar-text" @click="toggleMenu" style="float:right">
-            <RouterLink class="btn" :to="{ name: '' }">Contáctanos</RouterLink>
-          </span>
-        </div>        
+<template>
+  <div class="nav-top">
+    <div class="brand">
+      <RouterLink class="navbar-brand" to="/">
+        <!-- Logo UGB -->
+        <img src="/img/logoUGB.png" alt="Logo UGB" />
+        <!-- Logo Verde -->
+        <img src="/img/logoVerde.png" alt="Logo Verde" />
+      </RouterLink>
+      <span
+        class="navbar-text button-contact"
+        @click="toggleMenu"
+        style="float: right"
+      >
+        <RouterLink class="btn" :to="{ name: '' }">Contáctanos</RouterLink>
+      </span>
     </div>
   </div>
   <header class="header">
     <nav class="navbar navbar-expand-lg">
-      <div class="container">        
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#controlNav"
-          aria-controls="controlNav" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#controlNav"
+          aria-controls="controlNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="controlNav">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0" @click="toggleMenu">
+          <ul class="navbar-nav me-auto" @click="toggleMenu">
             <li class="nav-item">
               <RouterLink class="nav-link" :to="{ name: 'inicio' }">
-                Inicio</RouterLink>
+                Inicio</RouterLink
+              >
             </li>
             <li class="nav-item">
               <RouterLink class="nav-link" :to="{ name: 'inicio' }">
-                Proyectos</RouterLink>
+                Proyectos</RouterLink
+              >
             </li>
+            <li class="nav-item">
+              <RouterLink class="nav-link" :to="{ name: 'inicio' }">
+                UGB Verde</RouterLink
+              >
+            </li>
+            <li class="nav-item">
+              <RouterLink class="nav-link" :to="{ name: 'inicio' }">
+                Directorio</RouterLink
+              >
+            </li>
+            <span
+              class="nav-item button-contact-mobile"
+              @click="toggleMenu"
+              style="float: right"
+            >
+              <RouterLink class="nav-link contact-mobile" :to="{ name: '' }"
+                >Contáctanos</RouterLink
+              >
+            </span>
           </ul>
           <!-- social links -->
-          <ul class="navbar-nav d-flex flex-row">
-                <!-- Icons -->
-                <li class="nav-item me-3 me-lg-0">
-                    <a class="nav-link" href="https://www.facebook.com/ugboficial/" target="_blank">
-                      <i class="bi bi-facebook"></i>
-                    </a>
-                </li>
-                <li class="nav-item me-3 me-lg-0">
-                    <a class="nav-link" href="https://www.instagram.com/ugb.sv/#" target="_blank">
-                      <i class="bi bi-instagram"></i>
-                    </a>
-                </li>
-                <li class="nav-item me-3 me-lg-0">
-                    <a class="nav-link" href="https://www.linkedin.com/company/ugb-sv/" target="_blank">
-                      <i class="bi bi-linkedin"></i>
-                    </a>
-                </li>
-                <li class="nav-item me-3 me-lg-0">
-                    <a class="nav-link" href="https://twitter.com/UGB_SV" target="_blank">
-                      <i class="bi bi-twitter"></i>
-                    </a>
-                </li>
-                <li class="nav-item me-3 me-lg-0">
-                    <a class="nav-link" href="https://www.youtube.com/user/VideosUGB" target="_blank">
-                      <i class="bi bi-youtube"></i>
-                    </a>
-                </li>               
-            </ul>
-
+          <ul class="social-links">
+            <!-- Icons -->
+            <li class="nav-item me-3 me-lg-0">
+              <a
+                class="nav-link"
+                href="https://www.facebook.com/ugboficial/"
+                target="_blank"
+              >
+                <i class="bi bi-facebook"></i>
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a
+                class="nav-link"
+                href="https://www.instagram.com/ugb.sv/#"
+                target="_blank"
+              >
+                <i class="bi bi-instagram"></i>
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a
+                class="nav-link"
+                href="https://www.linkedin.com/company/ugb-sv/"
+                target="_blank"
+              >
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a
+                class="nav-link"
+                href="https://twitter.com/UGB_SV"
+                target="_blank"
+              >
+                <i class="bi bi-twitter"></i>
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a
+                class="nav-link"
+                href="https://www.youtube.com/user/VideosUGB"
+                target="_blank"
+              >
+                <i class="bi bi-youtube"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -84,7 +132,7 @@ const toggleMenu = () => {
   top: 0;
   z-index: 100;
   background-color: #fff;
-  padding: 0.4rem 2rem;
+  padding: 0.1rem;
   box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.05);
 }
 
@@ -95,20 +143,12 @@ const toggleMenu = () => {
 .brand img:nth-child(1) {
   margin-right: 1rem;
 }
-.brand img:nth-child(2) {
-  border-radius: 1rem;
-}
-
-.navbar-nav {
-  margin-right: 2rem;
-}
 
 .nav-link {
   color: var(--gray);
   transition: all 0.8s ease;
   padding: 1rem 1rem;
   margin: 0 1rem;
-  border-radius: 0.5rem;
   font-size: 1.2rem;
   font-weight: 500;
   text-align: center;
@@ -122,32 +162,24 @@ const toggleMenu = () => {
   transition: all 0.8s ease;
   font-size: 1rem;
   font-weight: 500;
-  width: 18vh;
-  height: 5vh;
 }
 
 .nav-link:hover,
 .btn:hover {
   background-color: var(--white);
   color: var(--black);
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
-.btn:hover {
-  transform: scale(1.3);
-}
-
-.nav-link:focus,
 .btn:focus {
-  color: var(--black);
-  font-weight: 700;
-  transition: all 0.8s ease;
+  color: var(--white);
+  background-color: var(--greenB);
 }
 
 .navbar-toggler {
   border: none;
   outline: none;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
   color: var(--white);
   background-color: var(--black);
 }
@@ -156,14 +188,34 @@ const toggleMenu = () => {
   background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-@media (max-width: 992px) {
+.nav-top {
+  background-color: var(--black);
+  position: relative;
+  padding: 0.5rem;
+}
 
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.brand {
+  padding: 0.5rem 2rem;
+}
+
+.button-contact-mobile {
+  display: none;
+}
+
+@media (max-width: 992px) {
   .navbar-nav,
   .btn {
     display: flex;
     flex-direction: column;
-    margin-right: 0;
     align-items: center;
+    justify-content: center;
   }
 
   .navbar-collapse {
@@ -174,15 +226,23 @@ const toggleMenu = () => {
     margin: 0.5rem 0;
   }
 
-  .btn {
+  .social-links {
     margin-top: 1rem;
-    padding: auto;
   }
 
-  .btn:hover {
-    transform: scale(1.1);
+  .button-contact {
+    display: none;
   }
 
+  .button-contact-mobile {
+    display: block;
+  }
+
+  .contact-mobile {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+  }
 }
 
 @media (max-width: 576px) {
@@ -194,18 +254,8 @@ const toggleMenu = () => {
     margin-right: 0;
   }
 
-  .navbar-toggler {
-    border: none;
-    outline: none;
-    margin-right: 0;
+  .social-links {
+    padding: 0;
   }
-
-}
-.top{
-  background-color: #000;
-  position: relative;
-  height: 10vh;
-  display: grid;
-  place-items: center;
 }
 </style>
