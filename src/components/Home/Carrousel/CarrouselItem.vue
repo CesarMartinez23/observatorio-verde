@@ -118,4 +118,24 @@ defineProps({
   text-align: center;
   padding: 0.5rem 1rem;
 }
+
+@media (max-width: 768px) {
+  .carousel-caption h1 {
+    font-size: 3rem;
+    line-height: 50px;
+    width: 100%;
+  }
+
+  .carousel-caption p {
+    font-size: 1rem;
+    line-height: 20px;
+    width: 100%;
+  }
+
+  .carousel-caption button {
+    font-size: 1rem;
+    margin-top: 1rem;
+    padding: 10px 30px 10px;
+  }
+}
 </style>
