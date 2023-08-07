@@ -15,7 +15,7 @@
           </div>
         </div>
         <div class="col-lg-5 content-column">
-          <div class="secion-icon">
+          <div class="section-icon">
             <i class="bi bi-layers-fill"></i>
           </div>
           <span class="title">Sobre nosotros</span>
@@ -80,6 +80,7 @@
   font-weight: bold;
   margin-bottom: 2rem;
   font-family: var(--font);
+  text-align: center;
 }
 
 .content-description {
@@ -93,21 +94,8 @@
   padding-left: 5px;
   padding-right: 40px;
 }
-
-.content-button {
-  font-size: 1rem;
-  padding: 1rem 2rem;
-  border-radius: 0;
-  background-color: var(--greenB);
-  color: var(--white);
-  transition: all 0.3s ease-in-out;
-  text-decoration: none;
-}
-
-.content-button:hover {
-  color: var(--white);
-  background-color: var(--green-500);
-  transform: scale(1.1);
+.section-icon {
+  align-self: center;
 }
 
 @media (max-width: 991.98px) {
@@ -127,10 +115,6 @@
 
   .content-description {
     font-size: 1.4rem;
-  }
-
-  .content-button {
-    font-size: 1rem;
   }
 }
 
