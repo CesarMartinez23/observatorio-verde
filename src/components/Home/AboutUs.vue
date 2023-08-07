@@ -1,21 +1,22 @@
 <script setup></script>
 
-<template>  
-  <div class="info">
-      <p>Ejecutamos proyectos para preservar ....</p>
-    </div>
+<template>
   <main class="custom-container">
     <div class="container">
       <div class="row">
         <div class="col-lg-7 video-column">
           <div class="video-wrapper">
-            <iframe class="video" src="https://www.youtube.com/embed/vTou7sBeAaQ" frameborder="0"
-              allowfullscreen></iframe>           
-          </div>        
-        </div>    
+            <iframe
+              class="video"
+              src="https://www.youtube.com/embed/vTou7sBeAaQ"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
         <div class="col-lg-5 content-column">
           <div class="secion-icon">
-              <i class="bi bi-layers-fill"></i>
+            <i class="bi bi-layers-fill"></i>
           </div>
           <span class="title">Sobre nosotros</span>
           <h1 class="content-title">
@@ -78,11 +79,11 @@
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 2rem;
-  font-family: var(--font); 
+  font-family: var(--font);
 }
 
 .content-description {
-  font-size: 1.0rem;
+  font-size: 1rem;
   margin-bottom: 2rem;
   color: var(--gray);
   text-align: justify;
@@ -146,19 +147,7 @@
     font-size: 1rem;
   }
 }
-.info{
-  display: block;
-  height: 7vh;
-  width: 100%;
-  background-color: var(--greenB);
-  font-size: 20px;
-  color: #ceffe5;
-  line-height: 28px;
-  letter-spacing: var(--letter-spacing2);
-  padding-top: 20px;
-  font-family: var(--font);
-  text-align: center;
-}
+
 button {
   background-color: var(--greenB);
   border: none;
@@ -177,5 +166,4 @@ button:hover {
   background-color: var(--white);
   color: var(--greenB);
 }
-
 </style>
