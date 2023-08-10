@@ -81,19 +81,19 @@
   margin-bottom: 2rem;
   font-family: var(--font);
   text-align: center;
+  letter-spacing: var(--letter-spacing);
 }
 
 .content-description {
-  font-size: 1rem;
+  font-size: 1.4rem;
   margin-bottom: 2rem;
   color: var(--gray);
   text-align: justify;
-  text-justify: inter-word;
   font-family: var(--font);
   line-height: 30px;
-  padding-left: 5px;
-  padding-right: 40px;
+  padding: 0 2rem;
 }
+
 .section-icon {
   align-self: center;
 }
@@ -120,7 +120,7 @@
 
 @media (max-width: 575.98px) {
   .content-title {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .content-description {
@@ -146,6 +146,7 @@ button {
   vertical-align: middle;
   padding: 10px 50px 10px;
 }
+
 button:hover {
   background-color: var(--white);
   color: var(--greenB);
