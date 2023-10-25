@@ -8,7 +8,12 @@ const router = createRouter({
       path: '/',
       name: 'inicio',
       component: HomeView
-    }
+    },
+    {
+      path: '/ugb-verde',
+      name: 'ugb-verde',
+      component: () => import('../views/VerdeView.vue')
+    },
   ]
 })
 

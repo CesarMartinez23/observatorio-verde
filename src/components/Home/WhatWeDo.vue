@@ -92,9 +92,6 @@
 
 .we-do {
   display: flex;
-  align-items: flex-start;
-  margin-bottom: 0.5rem;
-  margin-right: 30px;
 }
 
 .we-do-icon {

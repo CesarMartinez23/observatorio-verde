@@ -52,7 +52,7 @@ const toggleMenu = () => {
               >
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link" :to="{ name: 'inicio' }">
+              <RouterLink class="nav-link" :to="{ name: 'ugb-verde' }">
                 UGB Verde</RouterLink
               >
             </li>

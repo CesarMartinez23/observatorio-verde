@@ -51,7 +51,6 @@
 .video-column {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .video-wrapper {
