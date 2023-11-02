@@ -21,7 +21,9 @@ const toggleMenu = () => {
         @click="toggleMenu"
         style="float: right"
       >
-        <RouterLink class="btn" :to="{ name: '' }">Contáctanos</RouterLink>
+        <RouterLink class="btn" :to="{ name: 'contacto' }"
+          >Contáctanos</RouterLink
+        >
       </span>
     </div>
   </div>
@@ -61,14 +63,13 @@ const toggleMenu = () => {
                 Directorio</RouterLink
               >
             </li>
-            <span
-              class="nav-item button-contact-mobile"
-              @click="toggleMenu"
-              style="float: right"
-            >
-              <RouterLink class="nav-link contact-mobile" :to="{ name: '' }"
-                >Contáctanos</RouterLink
+            <span class="nav-item button-contact-mobile" style="float: right">
+              <RouterLink
+                class="nav-link contact-mobile"
+                :to="{ name: 'contacto' }"
               >
+                Contáctanos
+              </RouterLink>
             </span>
           </ul>
           <!-- social links -->

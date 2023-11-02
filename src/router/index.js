@@ -14,6 +14,11 @@ const router = createRouter({
       name: 'ugb-verde',
       component: () => import('../views/VerdeView.vue')
     },
+    {
+      path: '/contacto',
+      name: 'contacto',
+      component: () => import('../views/ContactView.vue')
+    }
   ]
 })
 
