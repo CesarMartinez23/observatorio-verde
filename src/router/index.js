@@ -17,7 +17,7 @@ const router = createRouter({
     {
       path: '/contacto',
       name: 'contacto',
-      component: () => import('../views/ContactView.vue')
+      component: () => import('../views/ContactVIew.vue')
     },
     {
       path: '/directorio',
