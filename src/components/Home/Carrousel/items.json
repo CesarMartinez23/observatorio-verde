@@ -4,7 +4,7 @@
     "intervalItem": "5000",
     "imageAlt": "Imagen 1",
 
-    "imageItem": "1.png",
+    "imageItem": "1.jpg",
     "titleItem": "Observatorio Verde 1",
     "descriptionItem": "Descubre lo mejor del observatorio verde",
     "buttonText": "Informacion",
@@ -15,7 +15,7 @@
     "intervalItem": "4000",
     "imageAlt": "Imagen 2",
 
-    "imageItem": "2.png",
+    "imageItem": "2.jpg",
     "titleItem": "Observatorio Verde 2",
     "descriptionItem": "Las mejores noticias del observatorio verde",
     "buttonText": "Mas",
@@ -26,7 +26,7 @@
     "intervalItem": "4000",
     "imageAlt": "Observatorio Verde 3",
 
-    "imageItem": "3.png",
+    "imageItem": "3.jpg",
     "titleItem": "UGB Verde",
     "descriptionItem": "Ya viste nuestros proyectos de UGB Verde?",
     "buttonText": "Acerca de",
@@ -37,11 +37,10 @@
     "intervalItem": "4000",
     "imageAlt": "Imagen 4",
 
-    "imageItem": "4.png",
+    "imageItem": "4.jpg",
     "titleItem": "Observatorio Verde 4",
     "descriptionItem": "Te gusta la naturaleza? Visita nuestro observatorio verde",
     "buttonText": "Contactanos",
     "buttonLink": "https://ugb.edu.sv/observatorioverde/"
   }
-
 ]

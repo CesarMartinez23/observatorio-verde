@@ -46,7 +46,7 @@
           </div>
         </div>
         <div class="col-lg-6 image-column ml-auto mr-0">
-          <img src="/img/carrousel-images/4.png" alt="Imagen" />
+          <img src="/img/carrousel-images/4.jpg" alt="Imagen" />
         </div>
       </div>
     </div>

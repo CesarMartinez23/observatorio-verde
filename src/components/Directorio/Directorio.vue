@@ -18,7 +18,7 @@
         <div class="col-lg-4 col-sm-6">
           <div class="card-instituciones">
             <div class="img-instituciones">
-              <img src="/img/directorio/mesaCambioClimatico.png" />
+              <img src="/img/directorio/mesaCambioClimatico.jpg" />
             </div>
             <div class="content-instituciones">
               <h3>Mesa de Cambio Climático de El Salvador</h3>
@@ -37,7 +37,7 @@
         <div class="col-lg-4 col-sm-6">
           <div class="card-instituciones">
             <div class="img-instituciones">
-              <img src="/img/directorio/ministerioMedioAmbiente.png" />
+              <img src="/img/directorio/ministerioMedioAmbiente.jpg" />
             </div>
             <div class="content-instituciones">
               <h3>Ministerio de Medio Ambiente</h3>

@@ -135,7 +135,7 @@
 </template>
 <style scoped>
 .section-ugb-verde {
-  background-image: url(/img/ugbVerde/heroTitle.png);
+  background-image: url(/img/ugbVerde/heroTitle.jpg);
   background-position: center;
   background-size: cover;
   padding: 50px 0px;
