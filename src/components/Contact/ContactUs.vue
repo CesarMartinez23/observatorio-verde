@@ -126,7 +126,7 @@
   color: var(--black);
   letter-spacing: var(--letter-spacing);
   margin-top: 0.2rem;
-  color: var(--greenB);
+  color: var(--green-900);
 }
 .content-img {
   max-width: 75%;
@@ -163,7 +163,7 @@
 .info i {
   font-size: 32px;
   line-height: 1;
-  color: var(--greenB);
+  color: var(--green-900);
 }
 
 .info p {

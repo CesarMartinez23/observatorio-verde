@@ -15,77 +15,79 @@
   <section class="section-card">
     <div class="container py-5">
       <div class="row">
-        <div class="col-lg-4 col-sm-6">
+        <div class="col-lg-6 col-sm-6">
           <div class="card-instituciones">
-            <div class="img-instituciones">
-              <img src="/img/directorio/mesaCambioClimatico.jpg" />
-            </div>
+            <div class="img-instituciones"></div>
             <div class="content-instituciones">
               <h3>Mesa de Cambio Climático de El Salvador</h3>
               <p>
-                <i class="bi bi-envelope-check-fill"></i
-                >mesacambioclimatico@gmail.com
+                <i class="bi bi-globe"></i>
+                <a href="mesacambioclimatico@gmail.com" target="_blank"
+                  >mesacambioclimatico@gmail.com</a
+                >
               </p>
-              <p><i class="bi bi-telephone-fill"></i>7744-4576</p>
+              <p><i class="bi bi-telephone"></i>7744-4576</p>
               <p>
-                <i class="bi bi-file-earmark-word-fill"></i>Mesa de Cambio
-                Climático El Salvador
+                <i class="bi bi-geo-alt"></i>Mesa de Cambio Climático El
+                Salvador
               </p>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-sm-6">
+        <div class="col-lg-6 col-sm-6">
           <div class="card-instituciones">
-            <div class="img-instituciones">
-              <img src="/img/directorio/ministerioMedioAmbiente.jpg" />
-            </div>
+            <div class="img-instituciones"></div>
             <div class="content-instituciones">
               <h3>Ministerio de Medio Ambiente</h3>
               <p>
-                <i class="bi bi-envelope-check-fill"></i> https://marn.gob.sv/
+                <i class="bi bi-globe"></i>
+                <a href="https://marn.gob.sv/" target="_blank"
+                  >https://marn.gob.sv/</a
+                >
               </p>
-              <p><i class="bi bi-telephone-fill"></i>2665-8383</p>
+              <p><i class="bi bi-telephone"></i>2665-8383</p>
               <p>
-                <i class="bi bi-file-earmark-word-fill"></i>Colonia Ciudad
-                Jardín, calle Los Naranjos, #22, San Miguel.
+                <i class="bi bi-geo-alt"></i>Colonia Ciudad Jardín, calle Los
+                Naranjos, #22, San Miguel.
               </p>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-sm-6">
+        <div class="col-lg-6 col-sm-6">
           <div class="card-instituciones">
-            <div class="img-instituciones">
-              <img src="/img/directorio/fundacionMontes.jpg" />
-            </div>
+            <div class="img-instituciones"></div>
             <div class="content-instituciones">
               <h3>Fundación Segundo Montes</h3>
               <p>
-                <i class="bi bi-envelope-check-fill"></i
-                >Fsegundomontes@gmail.com
+                <i class="bi bi-globe"></i>
+                <a href="Fsegundomontes@gmail.com" target="_blank"
+                  >Fsegundomontes@gmail.com</a
+                >
               </p>
-              <p><i class="bi bi-telephone-fill"></i>2680-5574</p>
+              <p><i class="bi bi-telephone"></i>2680-5574</p>
               <p>
-                <i class="bi bi-file-earmark-word-fill"></i>Carretera a Perkin
-                Km 192 1/2, caserío San Luis, Meanguera Morazán.
+                <i class="bi bi-geo-alt"></i>Carretera a Perkin Km 192 1/2,
+                caserío San Luis, Meanguera Morazán.
               </p>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-sm-6">
+        <div class="col-lg-6 col-sm-6">
           <div class="card-instituciones">
-            <div class="img-instituciones">
-              <img src="/img/directorio/nacionesUnidas.jpg" />
-            </div>
+            <div class="img-instituciones"></div>
             <div class="content-instituciones">
               <h3>Programa de las Naciones Unidas para el Desarrollo</h3>
               <p>
-                <i class="bi bi-envelope-check-fill"></i>registry.sv@undp.org
+                <i class="bi bi-envelope"></i>
+                <a href="registry.sv@undp.org" target="_blank"
+                  >registry.sv@undp.org</a
+                >
               </p>
-              <p><i class="bi bi-telephone-fill"></i>2263-0066</p>
+              <p><i class="bi bi-telephone"></i>2263-0066</p>
               <p>
-                <i class="bi bi-file-earmark-word-fill"></i>Edificio Naciones
-                Unidas, Blvd. Orden de Malta Sur, No. 2-B, Santa Elena, Antiguo
-                Cuscatlan, La Libertad
+                <i class="bi bi-geo-alt"></i>Edificio Naciones Unidas, Blvd.
+                Orden de Malta Sur, No. 2-B, Santa Elena, Antiguo Cuscatlan, La
+                Libertad
               </p>
             </div>
           </div>
@@ -114,7 +116,7 @@
 }
 
 .titulo {
-  color: var(--greenB);
+  color: var(--green-900);
   font-size: 3rem;
   font-weight: 700;
   font-family: var(--font);
@@ -123,7 +125,7 @@
   color: var(--white);
   padding-left: 20px;
   font-family: var(--font);
-  border-left: 2px solid var(--greenB);
+  border-left: 2px solid var(--green-900);
   margin: 40px 0;
   font-size: 1.8rem;
   margin-top: 0.2rem;
@@ -135,6 +137,7 @@
 .card-instituciones {
   margin-bottom: 40px;
   width: 100%;
+  height: 250px;
   float: left;
   border-radius: 5px;
   background: var(--white);
@@ -148,7 +151,7 @@
   overflow: hidden;
 }
 .img-instituciones img {
-  width: 100%;
+  width: 50px;
   height: auto;
 }
 .content-instituciones {
@@ -160,13 +163,14 @@
   line-height: 34px;
   font-size: 1.2rem;
   margin: 0 0 8px;
+  font-family: var(--font);
 }
 .card-instituciones p {
   font-size: 1rem;
   color: var(--black);
 }
 .card-instituciones p i {
-  color: var(--greenB);
+  color: var(--green-900);
   margin-right: 5px;
   padding: 50px 0px;
 }
@@ -236,5 +240,8 @@
   .card-instituciones p {
     font-size: 0.6rem;
   }
+}
+p {
+  font-family: var(--font);
 }
 </style>

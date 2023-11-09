@@ -11,7 +11,7 @@
             &copy; Copyright <span class="fw-bold">Universidad Gerardo Barrios</span>. All Rights Reserved
           </div>
           <div class="credits">
-            Designed by Vicerrectoría de Investigación UGB
+            Desarrollo e Innovación | Vicerrectoría de Investigación UGB
           </div>
         </div>
       </div>
@@ -26,6 +26,7 @@
   padding: 1.5rem 0;
   font-size: 1rem;
   color: var(--gray);
+  font-family: var(--font);
   /* position: relative;
   bottom: 0;
   width: 100%; */

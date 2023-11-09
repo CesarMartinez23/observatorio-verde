@@ -13,7 +13,7 @@
               <i class="bi bi-award"></i>
             </div>
             <div>
-              <h2 class="we-do-title">Participación</h2>
+              <h2 class="we-do-title">Participar</h2>
               <p class="we-do-description lh-base">
                 En congresos ambientales y así mantenernos informados y
                 capacitados en los servicios para la zona oriental.
@@ -97,7 +97,7 @@
 .we-do-icon {
   font-size: 2.5rem;
   margin-right: 0.5rem;
-  color: var(--greenB);
+  color: var(--green-900);
 }
 
 .we-do-title {
@@ -111,11 +111,12 @@
 }
 
 .we-do-description {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   margin-top: 1rem;
+  margin-right: 2rem;
   text-align: justify;
   text-justify: inter-word;
-  color: var(--gray-200);
+  color: var(--black);
 }
 
 @media (max-width: 991.98px) {

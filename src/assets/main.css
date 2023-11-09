@@ -1,9 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 :root {
-  --green: #1e8634;
-
-  --green-900: #166421;
-  --green-800: #1d7a28;
-  --green-700: #2a9d3b;
+  --green-900: #0ca554;
   --green-600: #3fbd53;
   --green-500: #51d769;
   --green-400: #69e088;
@@ -11,17 +8,34 @@
   --green-200: #b3e8d9;
   --green-100: #dcedf3;
   --green-50: #f0f9f7;
+  --green-20: #f6f8f8;
 
   --white: #fff;
-  --f4: #f4f4f4;
+  --f4: #f6f8f8;
   --black: #151515;
-  --greenB: #0ca554;
-  --font: "DM Sans", sans-serif;
-  --gray: #9d9d9d;
+  --font: 'Poppins';
+  --gray: #666;
   --gray-200: #888888;
   --letter-spacing: -0.04em;
   --letter-spacing2: 0.2em;
+
+
+  --color-text: #616161;
+  --color-text-btn: #ffffff;
+  --card1-gradient-color1: #f12711;
+  --card1-gradient-color2: #f5af19;
+  --card2-gradient-color1: #7F00FF;
+  --card2-gradient-color2: #E100FF;
+  --card3-gradient-color1: #3f2b96;
+  --card3-gradient-color2: #a8c0ff;
+  --card4-gradient-color1: #11998e;
+  --card4-gradient-color2: #38ef7d;
 }
+
+body{
+  font-family: 'Poppins';
+}
+
 .title {
   position: relative;
   display: inline-block;
@@ -35,5 +49,63 @@
   text-align: center;
 }
 .bi-layers-fill {
-  color: var(--greenB);
+  color: var(--green-900);
+}
+
+.section-icon {
+  align-self: center;
+}
+
+@media (max-width: 991.98px) {
+  .video-column {
+    margin-bottom: 2rem;
+  }
+}
+
+.content-title {
+  color: var(--black);
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  font-family: var(--font);
+  text-align: center;
+  letter-spacing: var(--letter-spacing);
+}
+
+.content-description {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  text-align: justify;
+  text-justify: inter-word;
+  color: var(--black);
+  padding: 0 1rem;
+  font-family: var(--font);
+}
+
+@media (max-width: 767.98px) {
+  .custom-container {
+    padding: 2rem;
+  }
+
+  .content-title {
+    font-size: 2rem;
+  }
+
+  .content-description {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .content-title {
+    font-size: 1.8rem;
+  }
+
+  .content-description {
+    font-size: 1.2rem;
+  }
+
+  .content-button {
+    font-size: 1rem;
+  }
 }

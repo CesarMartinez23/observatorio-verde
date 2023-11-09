@@ -18,10 +18,9 @@
           <div class="section-icon">
             <i class="bi bi-layers-fill"></i>
           </div>
-          <span class="title">Sobre nosotros</span>
+          <span class="title">Conoce más</span>
           <h1 class="content-title">
-            Conoce más <br />
-            sobre nosotros
+            Sobre nosotros
           </h1>
           <p class="content-description">
             A finales del año 2019, la Universidad Gerardo Barrios, a través de
@@ -56,7 +55,8 @@
 .video-wrapper {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%;
+  margin-top: 30px;
+  margin-bottom: 15px;
 }
 
 .video {
@@ -73,66 +73,10 @@
   text-align: justify;
 }
 
-.content-title {
-  color: var(--black);
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
-  font-family: var(--font);
-  text-align: center;
-  letter-spacing: var(--letter-spacing);
-}
 
-.content-description {
-  font-size: 1.4rem;
-  margin-bottom: 2rem;
-  color: var(--gray);
-  text-align: justify;
-  font-family: var(--font);
-  line-height: 30px;
-  padding: 0 2rem;
-}
-
-.section-icon {
-  align-self: center;
-}
-
-@media (max-width: 991.98px) {
-  .video-column {
-    margin-bottom: 2rem;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .custom-container {
-    padding: 2rem;
-  }
-
-  .content-title {
-    font-size: 2rem;
-  }
-
-  .content-description {
-    font-size: 1.4rem;
-  }
-}
-
-@media (max-width: 575.98px) {
-  .content-title {
-    font-size: 1.8rem;
-  }
-
-  .content-description {
-    font-size: 1.2rem;
-  }
-
-  .content-button {
-    font-size: 1rem;
-  }
-}
 
 button {
-  background-color: var(--greenB);
+  background-color: var(--green-900);
   border: none;
   color: var(--white);
   padding: 10px 20px;
@@ -148,6 +92,6 @@ button {
 
 button:hover {
   background-color: var(--white);
-  color: var(--greenB);
+  color: var(--green-900);
 }
 </style>

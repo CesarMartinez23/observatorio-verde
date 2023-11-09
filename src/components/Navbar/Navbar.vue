@@ -12,9 +12,9 @@ const toggleMenu = () => {
     <div class="brand">
       <RouterLink class="navbar-brand" to="/">
         <!-- Logo UGB -->
-        <img src="/img/logoUGB.png" alt="Logo UGB" />
+        <img src="/img/logoUGB.png" alt="Logo UGB" class="ugbLogo" />
         <!-- Logo Verde -->
-        <img src="/img/logoVerde.png" alt="Logo Verde" />
+        <img src="/img/logoVerde.png" alt="Logo Verde" class="ugbVerde" />
       </RouterLink>
       <span
         class="navbar-text button-contact"
@@ -137,16 +137,18 @@ const toggleMenu = () => {
   box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.05);
 }
 
-.brand img {
-  max-height: 60px;
+.ugbLogo {
+  max-width: 160px;
 }
-
+.ugbVerde {
+  max-width: 65px;
+}
 .brand img:nth-child(1) {
   margin-right: 1rem;
 }
 
 .nav-link {
-  color: var(--gray);
+  color: var(--black);
   transition: all 0.8s ease;
   padding: 1rem 1rem;
   margin: 0 1rem;
@@ -156,7 +158,7 @@ const toggleMenu = () => {
 }
 
 .btn {
-  background-color: var(--greenB);
+  background-color: var(--green-900);
   color: var(--white);
   border-radius: 0;
   padding: 0.5rem 1rem;
@@ -174,7 +176,7 @@ const toggleMenu = () => {
 
 .btn:focus {
   color: var(--white);
-  background-color: var(--greenB);
+  background-color: var(--green-900);
 }
 
 .navbar-toggler {
@@ -193,6 +195,7 @@ const toggleMenu = () => {
   background-color: var(--black);
   position: relative;
   padding: 0.5rem;
+  max-height: 88px;
 }
 
 .social-links {
@@ -201,9 +204,12 @@ const toggleMenu = () => {
   justify-content: center;
   list-style: none;
 }
+.social-links .nav-link {
+  color: var(--gray);
+}
 
 .brand {
-  padding: 0.5rem 2rem;
+  padding-left: 10px;
 }
 
 .button-contact-mobile {
@@ -258,5 +264,11 @@ const toggleMenu = () => {
   .social-links {
     padding: 0;
   }
+}
+
+.navbar-text{
+  margin-right: 100px;
+  margin-top: 5px;
+  margin-bottom: 15px;
 }
 </style>

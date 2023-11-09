@@ -92,7 +92,7 @@ defineProps({
 }
 
 .carousel-caption button {
-  background-color: var(--greenB);
+  background-color: var(--green-900);
   border: none;
   color: var(--white);
   font-weight: 600;
@@ -105,11 +105,11 @@ defineProps({
 
 .carousel-caption button:hover {
   background-color: var(--white);
-  color: var(--greenB);
+  color: var(--green-900);
 }
 
 .info {
-  background-color: var(--greenB);
+  background-color: var(--green-900);
   font-size: 20px;
   color: #ceffe5;
   /* line-height: 28px; */
