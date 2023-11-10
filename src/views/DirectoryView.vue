@@ -1,7 +1,7 @@
 <script setup>
-import Directorio from "../components/Directorio/Directorio.vue";
+import Directory from "../components/Directory/Directory.vue";
 </script>
 
 <template>
-  <Directorio />
+  <Directory />
 </template>

@@ -99,7 +99,7 @@
 
 <style scoped>
 .section-directorio {
-  background: url("/img/directorio/portadaDirectorio.jpg") center;
+  background: url("/img/directoryImages/portadaDirectorio.jpg") center;
   width: 100%;
   min-height: 80vh;
   background-size: cover;

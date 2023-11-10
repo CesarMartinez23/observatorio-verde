@@ -28,7 +28,7 @@
           </p>
         </div>
         <div class="col-lg-6 d-flex justify-content-center">
-          <img src="/img/ugbVerde/mano.jpg" class="content-img" />
+          <img src="/img/ugbVerdeImages/mano.jpg" class="content-img" />
         </div>
       </div>
     </div>
@@ -188,7 +188,7 @@
 </template>
 <style scoped>
 .section-ugb-verde {
-  background-image: url(/img/ugbVerde/heroTitle.jpg);
+  background-image: url(/img/ugbVerdeImages/portadaUgbVerde.jpg);
   background-position: center;
   background-size: cover;
   padding: 50px 0px;
@@ -208,45 +208,13 @@
   font-weight: 700;
   font-family: var(--font);
 }
-.titulo::before {
-  content: "";
-  width: 70px;
-  height: 3px;
-  background: var(--black);
-  display: inline-block;
-  margin: 0 15px 10px 0;
-  border-radius: 5px;
-}
-.titulo::after {
-  content: "";
-  width: 70px;
-  height: 3px;
-  background: var(--black);
-  display: inline-block;
-  margin: 0 0 10px 15px;
-  border-radius: 5px;
-}
+
 .subtitulo {
   font-size: 1.8rem;
   color: var(--black);
   margin-top: 0.2rem;
 }
-.text-title {
-  color: var(--black);
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-  font-family: var(--font);
-}
-.sub-title {
-  font-size: 1rem;
-  margin-bottom: 2rem;
-  color: var(--gray);
-  text-align: justify;
-  font-family: var(--font);
-  line-height: 30px;
-  padding: 0px 0.5rem;
-}
+
 .content-img {
   width: 75%;
   height: 100%;
@@ -256,25 +224,6 @@
   background-color: #fff;
   margin-top: 10px;
   margin-bottom: 150px;
-}
-.box-shadow {
-  box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.2);
-  padding: 50px;
-}
-.secion-icon i {
-  font-size: 20px;
-  line-height: 1;
-  color: var(--green-900);
-}
-.barra {
-  position: relative;
-  border-left-width: 1px;
-  border-left-style: solid;
-  border-left-color: var(--gray);
-  margin-top: 30px;
-}
-.parrafo {
-  padding: 10px 0px 10px 40px;
 }
 
 @media (max-width: 768px) {
@@ -290,29 +239,10 @@
   .subtitulo {
     font-size: 1.5rem;
   }
-  .text-title {
-    font-size: 2rem;
-  }
-  .sub-title {
-    font-size: 1rem;
-  }
+
   .content-img {
     width: 100%;
     height: 100%;
-  }
-  .box-shadow {
-    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.2);
-    padding: 50px;
-  }
-  .barra {
-    position: relative;
-    border-left-width: 1px;
-    border-left-style: solid;
-    border-left-color: var(--gray);
-    margin-top: 30px;
-  }
-  .parrafo {
-    padding: 10px 0px 10px 40px;
   }
 }
 
@@ -329,29 +259,10 @@
   .subtitulo {
     font-size: 1.2rem;
   }
-  .text-title {
-    font-size: 1.5rem;
-  }
-  .sub-title {
-    font-size: 1rem;
-  }
+
   .content-img {
     width: 100%;
     height: 100%;
-  }
-  .box-shadow {
-    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.2);
-    padding: 50px;
-  }
-  .barra {
-    position: relative;
-    border-left-width: 1px;
-    border-left-style: solid;
-    border-left-color: var(--gray);
-    margin-top: 30px;
-  }
-  .parrafo {
-    padding: 10px 0px 10px 40px;
   }
 
   .hero {
@@ -376,29 +287,10 @@
   .subtitulo {
     font-size: 1.2rem;
   }
-  .text-title {
-    font-size: 1.5rem;
-  }
-  .sub-title {
-    font-size: 1rem;
-  }
+
   .content-img {
     width: 100%;
     height: 100%;
-  }
-  .box-shadow {
-    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.2);
-    padding: 50px;
-  }
-  .barra {
-    position: relative;
-    border-left-width: 1px;
-    border-left-style: solid;
-    border-left-color: var(--gray);
-    margin-top: 30px;
-  }
-  .parrafo {
-    padding: 10px 0px 10px 40px;
   }
 }
 .counter-section i {
@@ -423,11 +315,8 @@
   padding: 0 1rem;
   font-family: var(--font);
 }
-.counter-icon {
-  top: 25px;
-  position: relative;
-}
-.counter-style2 .counter-title {
+
+.counter-title {
   letter-spacing: 0.55px;
   float: left;
 }
@@ -435,14 +324,6 @@
   letter-spacing: 0.55px;
   float: left;
   margin-right: 10px;
-}
-.counter-style2 i {
-  float: right;
-  line-height: 26px;
-  margin: 0 10px 0 0;
-}
-.counter-subheadline span {
-  float: right;
 }
 
 .medium-icon {
@@ -469,6 +350,7 @@ body {
   flex-wrap: wrap;
   gap: 30px;
 }
+
 .card-wrap1 {
   width: 100%;
   background: #fff;
@@ -479,19 +361,23 @@ body {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
+
 .card-wrap1:hover {
   transform: scale(1.1);
 }
+
 .card-header1 {
   height: 5px;
   width: 100%;
   display: grid;
   place-items: center;
 }
+
 .card-header1 i {
   color: var(--green-900);
   font-size: 72px;
 }
+
 .card-content1 {
   display: flex;
   flex-direction: column;
@@ -499,6 +385,7 @@ body {
   width: 90%;
   margin: 0 auto;
 }
+
 .card-text1 {
   text-align: justify;
   font-size: 1em;
@@ -507,6 +394,7 @@ body {
   font-family: var(--font);
   height: 300px;
 }
+
 .card-header1.four {
   background: linear-gradient(
     to bottom left,

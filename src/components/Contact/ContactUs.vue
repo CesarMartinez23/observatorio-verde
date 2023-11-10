@@ -15,7 +15,7 @@
           </div>
         </div>
         <div class="col-lg-6 d-flex justify-content-center">
-          <img src="/img/contacto/coordinadora.jpg" class="content-img" />
+          <img src="/img/contactImages/coordinadora.jpg" class="content-img" />
         </div>
       </div>
     </div>

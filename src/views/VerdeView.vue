@@ -1,7 +1,6 @@
 <script setup>
-import HeroTitle from "../components/Verde/VerdeHero.vue";
+import UgbVerde from "../components/UgbVerde/UgbVerde.vue";
 </script>
 <template>
-  <HeroTitle />
+  <UgbVerde />
 </template>
-<style scoped></style>
