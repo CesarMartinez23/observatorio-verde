@@ -6,9 +6,12 @@
     <div class="container principal">
       <div class="row">
         <div class="col-lg-6 d-flex justify-content-center flex-column py-3">
-          <h1 class="text-title">Coordinación</h1>
+          <h1 class="section-title">Coordinaci&oacute;n</h1>
+          <div class="section-icon">
+            <i class="bi bi-layers-fill"></i>
+          </div>
+          <p class="mini-section-title">Responsable del Observatorio</p>
           <div>
-            <p class="title">Responsable del Observatorio</p>
             <h2 class="text-subtitle">
               Mtra. Nurian Yamileth Luna de Quintanilla
             </h2>
@@ -24,11 +27,11 @@
   <!-- Seccion forma de contactanos -->
   <section class="section-contact py-5">
     <div class="container text-center">
-      <div class="secion-icon">
+      <div>
         <i class="bi bi-layers-fill"></i>
       </div>
-      <p class="title">Observatorio verde</p>
-      <h1 class="text-title">Formas de Contactarnos</h1>
+      <p class="mini-section-title">Contactanos</p>
+      <h1 class="section-title">Formas de Contactarnos</h1>
       <p class="text-content">
         Puedes contactarnos a través de las redes sociales de la Universidad
         Gerardo Barrios.
@@ -113,19 +116,13 @@
   background-size: cover;
   background-position: center;
 }
-.text-title {
-  color: var(--black);
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-  font-family: var(--font);
-}
+
 .text-subtitle {
-  font-size: 1.8rem;
+  font-size: 28px;
   font-weight: 700;
   color: var(--black);
   letter-spacing: var(--letter-spacing);
-  margin-top: 0.2rem;
+  margin-top: 3px;
   color: var(--green-900);
 }
 .content-img {
@@ -147,7 +144,7 @@
 }
 .seccion-mapa {
   background: var(--white);
-  margin-bottom: 5rem;
+  margin-bottom: 80px;
 }
 .contenedor-info {
   padding: 50px;
@@ -169,42 +166,39 @@
 .info p {
   padding: 0 0 10px 42px;
   line-height: 30px;
-  font-size: 1rem;
+  font-size: 16px;
   font-family: var(--font);
   color: var(--gray);
 }
 
 .info p strong {
-  font-size: 1.8rem;
+  font-size: 28px;
   font-weight: 700;
   color: var(--black);
   letter-spacing: var(--letter-spacing);
-  margin-top: 0.5rem;
+  margin-top: 8px;
   margin: 0;
 }
 
 .principal {
-  padding: 4rem 1rem;
+  padding: 64px 16px;
   text-align: center;
 }
 
 @media (max-width: 992px) {
-  .text-title {
-    font-size: 2.5rem;
-  }
   .text-subtitle {
-    font-size: 1.5rem;
+    font-size: 24px;
   }
   .content-img {
     max-width: 100%;
   }
   .text-content {
-    font-size: 18px;
+    font-size: 19px;
   }
   .info p {
     padding: 0 0 10px 42px;
     line-height: 30px;
-    font-size: 0.8rem;
+    font-size: 12px;
   }
   .info i {
     font-size: 28px;
@@ -215,24 +209,21 @@
   }
 
   .principal {
-    padding: 2rem 1rem;
+    padding: 32px 16px;
   }
 
   div img {
-    margin-top: 1rem;
+    margin-top: 16px;
   }
 
   .informacion {
-    margin-bottom: 3rem;
+    margin-bottom: 48px;
   }
 }
 
 @media (max-width: 768px) {
-  .text-title {
-    font-size: 2.5rem;
-  }
   .text-subtitle {
-    font-size: 1.5rem;
+    font-size: 24px;
   }
   .content-img {
     max-width: 100%;
@@ -243,7 +234,7 @@
   .info p {
     padding: 0 0 10px 42px;
     line-height: 30px;
-    font-size: 0.8rem;
+    font-size: 12px;
   }
   .info i {
     font-size: 28px;
@@ -251,11 +242,8 @@
 }
 
 @media (max-width: 576px) {
-  .text-title {
-    font-size: 2rem;
-  }
   .text-subtitle {
-    font-size: 1.2rem;
+    font-size: 19px;
   }
   .content-img {
     max-width: 100%;
@@ -266,7 +254,7 @@
   .info p {
     padding: 0 0 10px 42px;
     line-height: 30px;
-    font-size: 0.8rem;
+    font-size: 13px;
   }
   .info i {
     font-size: 28px;
@@ -274,11 +262,8 @@
 }
 
 @media (max-width: 480px) {
-  .text-title {
-    font-size: 1.8rem;
-  }
   .text-subtitle {
-    font-size: 1rem;
+    font-size: 16px;
   }
   .content-img {
     max-width: 100%;
@@ -289,7 +274,7 @@
   .info p {
     padding: 0 0 10px 42px;
     line-height: 30px;
-    font-size: 0.8rem;
+    font-size: 13px;
   }
   .info i {
     font-size: 28px;

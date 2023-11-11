@@ -1,24 +1,28 @@
-<script setup></script>
+<script setup>
+import ItemCounter from "./ItemCounter.vue";
+</script>
+
 <template>
   <section class="section-ugb-verde">
     <div class="container">
       <div class="d-flex justify-content-center text-center">
         <div class="contenedor">
-          <h1 class="titulo">UGB Verde</h1>
+          <h1 class="section-title">UGB Verde</h1>
           <p class="subtitulo">Pequeñas acciones, grandes cambios</p>
         </div>
       </div>
     </div>
   </section>
-  <section class="origenes">
+
+  <section class="custom-container">
     <div class="container hero">
       <div class="row">
         <div class="col-lg-6 d-flex justify-content-center flex-column py-3">
           <div class="section-icon">
             <i class="bi bi-layers-fill"></i>
           </div>
-          <span class="title">Orígenes</span>
-          <h1 class="content-title">Sobre el proyecto</h1>
+          <p class="mini-section-title">Orígenes</p>
+          <h1 class="section-title">Sobre el proyecto</h1>
           <p class="content-description">
             El 23 de abril del 2016 iniciamos nuestro proyecto UGB Verde, se
             encarga de fomentar las buenas prácticas ambientales y expandirlas
@@ -45,82 +49,44 @@
             <div class="section-icon">
               <i class="bi bi-layers-fill"></i>
             </div>
-            <span class="title">Logros</span>
-            <h1 class="content-title">Datos relevantes</h1>
+            <p class="mini-section-title">Logros</p>
+            <h1 class="section-title">Datos relevantes</h1>
           </div>
           <div class="row">
-            <!-- counter -->
-            <div
-              class="col-md-4 col-sm-6 bottom-margin text-center counter-section wow fadeInUp sm-margin-bottom-ten animated"
-              data-wow-duration="300ms"
-              style="
-                visibility: visible;
-                animation-duration: 300ms;
-                animation-name: fadeInUp;
-              "
+            <ItemCounter
+              number="43"
+              description="Estaciones de reciclaje distribuidas en todo el campus"
             >
-              <i class="bi bi-recycle medium-icon"></i>
-              <span
-                class="timer counter alt-font appear"
-                data-to="1"
-                data-speed="7000"
-                >43</span
-              >
-              <p class="counter-title">
-                Estaciones de reciclaje distribuidas en todo el campus
-              </p>
-            </div>
-            <!-- end counter -->
-            <!-- counter -->
-            <div
-              class="col-md-4 col-sm-6 bottom-margin text-center counter-section wow fadeInUp sm-margin-bottom-ten animated"
-              data-wow-duration="600ms"
-              style="
-                visibility: visible;
-                animation-duration: 600ms;
-                animation-name: fadeInUp;
-              "
+              <template v-slot:icon>
+                <i class="bi bi-recycle medium-icon"></i>
+              </template>
+            </ItemCounter>
+
+            <ItemCounter
+              number="4"
+              description="Paneles policristalinos en el parqueo"
             >
-              <i class="bi bi-check2-square medium-icon"></i>
-              <span
-                class="timer counter alt-font appear"
-                data-to="1"
-                data-speed="7000"
-                >4</span
-              >
-              <span class="counter-title"
-                >Paneles policristalinos en el parqueo</span
-              >
-            </div>
-            <!-- end counter -->
-            <!-- counter -->
-            <div
-              class="col-md-4 col-sm-6 bottom-margin text-center counter-section wow fadeInUp sm-margin-bottom-ten animated"
-              data-wow-duration="600ms"
-              style="
-                visibility: visible;
-                animation-duration: 600ms;
-                animation-name: fadeInUp;
-              "
+              <template v-slot:icon>
+                <!-- Cars -->
+                <i class="bi bi-car-front-fill medium-icon"></i>
+              </template>
+            </ItemCounter>
+
+            <ItemCounter
+              number="108"
+              description="Paneles policristalinos en el edificio Gerardo Barrios"
             >
-              <i class="bi bi-building-fill-check medium-icon"></i>
-              <span
-                class="timer counter alt-font appear"
-                data-to="1"
-                data-speed="7000"
-                >108</span
-              >
-              <span class="counter-title"
-                >Paneles policristalinos en el edificio Gerardo Barrios</span
-              >
-            </div>
-            <!-- end counter -->
+              <template v-slot:icon>
+                <i class="bi bi-building-fill-check medium-icon"></i>
+              </template>
+            </ItemCounter>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="origenes">
+
+  <section class="custom-container">
     <div class="container">
       <p class="content-description">
         La Universidad Gerardo Barrios a través de la ejecución de proyectos en
@@ -186,7 +152,12 @@
     </div>
   </section>
 </template>
+
 <style scoped>
+i {
+  display: block;
+  margin: 0 0 10px;
+}
 .section-ugb-verde {
   background-image: url(/img/ugbVerdeImages/portadaUgbVerde.jpg);
   background-position: center;
@@ -195,141 +166,22 @@
 }
 .contenedor {
   background-color: #ffffffd9;
-  padding: 2rem;
+  padding: 32px;
   width: 1000px;
   border-radius: 5px;
   box-shadow: 12px 10px 26px rgba(0, 0, 0, 0.08);
   border: 1px solid #e8f5e9;
 }
 
-.titulo {
-  color: var(--green-900);
-  font-size: 3rem;
-  font-weight: 700;
-  font-family: var(--font);
-}
-
 .subtitulo {
-  font-size: 1.8rem;
+  font-size: var(--h2);
   color: var(--black);
-  margin-top: 0.2rem;
 }
 
 .content-img {
   width: 75%;
   height: 100%;
   box-shadow: 12px 10px 26px rgba(0, 0, 0, 0.08);
-}
-.origenes {
-  background-color: #fff;
-  margin-top: 10px;
-  margin-bottom: 150px;
-}
-
-@media (max-width: 768px) {
-  .titulo {
-    font-size: 2rem;
-  }
-  .titulo::before {
-    width: 50px;
-  }
-  .titulo::after {
-    width: 50px;
-  }
-  .subtitulo {
-    font-size: 1.5rem;
-  }
-
-  .content-img {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-@media (max-width: 576px) {
-  .titulo {
-    font-size: 1.5rem;
-  }
-  .titulo::before {
-    width: 50px;
-  }
-  .titulo::after {
-    width: 50px;
-  }
-  .subtitulo {
-    font-size: 1.2rem;
-  }
-
-  .content-img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .hero {
-    padding: 2rem;
-  }
-
-  .container {
-    padding: 0px 2rem;
-  }
-}
-
-@media (max-width: 375px) {
-  .titulo {
-    font-size: 1.5rem;
-  }
-  .titulo::before {
-    width: 50px;
-  }
-  .titulo::after {
-    width: 50px;
-  }
-  .subtitulo {
-    font-size: 1.2rem;
-  }
-
-  .content-img {
-    width: 100%;
-    height: 100%;
-  }
-}
-.counter-section i {
-  display: block;
-  margin: 0 0 10px;
-}
-.counter-section span.counter {
-  font-size: 40px;
-  color: #000;
-  line-height: 60px;
-  display: block;
-  font-family: var(--font);
-  letter-spacing: 2px;
-  font-weight: bold;
-}
-.counter-title {
-  font-size: 1.2rem;
-  margin-top: 1rem;
-  text-align: center;
-  text-justify: inter-word;
-  color: var(--black);
-  padding: 0 1rem;
-  font-family: var(--font);
-}
-
-.counter-title {
-  letter-spacing: 0.55px;
-  float: left;
-}
-.counter-style2 span.counter {
-  letter-spacing: 0.55px;
-  float: left;
-  margin-right: 10px;
-}
-
-.medium-icon {
-  font-size: 40px !important;
-  margin-bottom: 15px !important;
-  color: var(--green-900);
 }
 
 .container {
@@ -401,5 +253,46 @@ body {
     var(--card4-gradient-color1),
     var(--card4-gradient-color2)
   );
+}
+
+@media (max-width: 768px) {
+  .subtitulo {
+    font-size: 24px;
+  }
+
+  .content-img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .subtitulo {
+    font-size: 19px;
+  }
+
+  .content-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero {
+    padding: 32px;
+  }
+
+  .container {
+    padding: 0px 32px;
+  }
+}
+
+@media (max-width: 375px) {
+  .subtitulo {
+    font-size: 19px;
+  }
+
+  .content-img {
+    width: 100%;
+    height: 100%;
+  }
 }
 </style>

@@ -1,6 +1,4 @@
-<script setup>
-
-</script>
+<script setup></script>
 
 <template>
   <footer class="footer">
@@ -8,7 +6,9 @@
       <div class="row d-flex align-items-center">
         <div class="col-lg-12 text-lg-left text-center">
           <div class="copyright">
-            &copy; Copyright <span class="fw-bold">Universidad Gerardo Barrios</span>. All Rights Reserved
+            &copy; Copyright
+            <span class="fw-bold">Universidad Gerardo Barrios</span>. All Rights
+            Reserved
           </div>
           <div class="credits">
             Desarrollo e Innovación | Vicerrectoría de Investigación UGB
@@ -19,12 +19,11 @@
   </footer>
 </template>
 
-
 <style scoped>
 .footer {
   background-color: var(--black);
-  padding: 1.5rem 0;
-  font-size: 1rem;
+  padding: 24px 0;
+  font-size: 16px;
   color: var(--gray);
   font-family: var(--font);
   /* position: relative;

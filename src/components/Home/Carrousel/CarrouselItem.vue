@@ -70,7 +70,7 @@ defineProps({
 
 .carousel-caption h1 {
   color: var(--white);
-  font-size: 5.5rem;
+  font-size: 88px;
   font-family: var(--font);
   font-weight: 700;
   line-height: 90px;
@@ -79,7 +79,7 @@ defineProps({
 }
 
 .carousel-caption p {
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: 500;
   line-height: 30px;
   letter-spacing: var(--letter-spacing2);
@@ -94,8 +94,8 @@ defineProps({
   color: var(--white);
   font-weight: 600;
   padding: 10px 15px;
-  font-size: 1.5rem;
-  margin-top: 1rem;
+  font-size: 24px;
+  margin-top: 16px;
   padding: 10px 50px 10px;
   transition: all 0.3s ease-in-out;
 }
@@ -113,25 +113,25 @@ defineProps({
   letter-spacing: var(--letter-spacing2);
   font-family: var(--font);
   text-align: center;
-  padding: 0.5rem 1rem;
+  padding: 8px 16px;
 }
 
 @media (max-width: 768px) {
   .carousel-caption h1 {
-    font-size: 3rem;
+    font-size: 48px;
     line-height: 50px;
     width: 100%;
   }
 
   .carousel-caption p {
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 20px;
     width: 100%;
   }
 
   .carousel-caption button {
-    font-size: 1rem;
-    margin-top: 1rem;
+    font-size: 16px;
+    margin-top: 16px;
     padding: 10px 30px 10px;
   }
 }

@@ -11,17 +11,15 @@
               src="https://www.youtube.com/embed/vTou7sBeAaQ"
               frameborder="0"
               allowfullscreen
-            ></iframe>
+            />
           </div>
         </div>
         <div class="col-lg-5 content-column">
           <div class="section-icon">
-            <i class="bi bi-layers-fill"></i>
+            <i class="bi bi-layers-fill" />
           </div>
-          <span class="title">Conoce más</span>
-          <h1 class="content-title">
-            Sobre nosotros
-          </h1>
+          <p class="mini-section-title">Conoce más</p>
+          <h1 class="section-title">Sobre nosotros</h1>
           <p class="content-description">
             A finales del año 2019, la Universidad Gerardo Barrios, a través de
             la Vicerrectoría de Investigación presentó el Observatorio Verde de
@@ -33,7 +31,6 @@
             de llevar acabo los Objetivos de Desarrollo Sostenibles desde El
             Salvador.
           </p>
-          <!--a href="#" class="btn content-button fw-bold">Documentos Relacionados</a-->
         </div>
       </div>
     </div>
@@ -43,8 +40,6 @@
 <style scoped>
 .custom-container {
   background-color: var(--f4);
-  padding: 4rem;
-  text-align: center;
 }
 
 .video-column {
@@ -65,33 +60,5 @@
   left: 0;
   width: 100%;
   height: 100%;
-}
-
-.content-column {
-  display: flex;
-  flex-direction: column;
-  text-align: justify;
-}
-
-
-
-button {
-  background-color: var(--green-900);
-  border: none;
-  color: var(--white);
-  padding: 10px 20px;
-  border-radius: 0;
-  font-size: 1.5rem;
-  margin-top: 1rem;
-  z-index: 50;
-  text-align: left;
-  opacity: 1;
-  vertical-align: middle;
-  padding: 10px 50px 10px;
-}
-
-button:hover {
-  background-color: var(--white);
-  color: var(--green-900);
 }
 </style>

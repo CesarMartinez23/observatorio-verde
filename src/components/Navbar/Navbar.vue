@@ -133,7 +133,7 @@ const toggleMenu = () => {
   top: 0;
   z-index: 100;
   background-color: #fff;
-  padding: 0.1rem;
+  padding: 2px;
   box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.05);
 }
 
@@ -144,15 +144,15 @@ const toggleMenu = () => {
   max-width: 65px;
 }
 .brand img:nth-child(1) {
-  margin-right: 1rem;
+  margin-right: 16px;
 }
 
 .nav-link {
   color: var(--black);
   transition: all 0.8s ease;
-  padding: 1rem 1rem;
-  margin: 0 1rem;
-  font-size: 1.2rem;
+  padding: 16px 16px;
+  margin: 0 16px;
+  font-size: 19px;
   font-weight: 500;
   text-align: center;
 }
@@ -161,9 +161,9 @@ const toggleMenu = () => {
   background-color: var(--green-900);
   color: var(--white);
   border-radius: 0;
-  padding: 0.5rem 1rem;
+  padding: 8px 16px;
   transition: all 0.8s ease;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 500;
 }
 
@@ -182,7 +182,7 @@ const toggleMenu = () => {
 .navbar-toggler {
   border: none;
   outline: none;
-  margin-right: 0.5rem;
+  margin-right: 8px;
   color: var(--white);
   background-color: var(--black);
 }
@@ -194,7 +194,7 @@ const toggleMenu = () => {
 .nav-top {
   background-color: var(--black);
   position: relative;
-  padding: 0.5rem;
+  padding: 8px;
   max-height: 88px;
 }
 
@@ -226,15 +226,15 @@ const toggleMenu = () => {
   }
 
   .navbar-collapse {
-    padding: 1rem 0.5rem;
+    padding: 16px 8px;
   }
 
   .nav-link {
-    margin: 0.5rem 0;
+    margin: 8px 0;
   }
 
   .social-links {
-    margin-top: 1rem;
+    margin-top: 16px;
   }
 
   .button-contact {
@@ -246,7 +246,7 @@ const toggleMenu = () => {
   }
 
   .contact-mobile {
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: 600;
     text-align: center;
   }
@@ -254,7 +254,7 @@ const toggleMenu = () => {
 
 @media (max-width: 576px) {
   .header {
-    padding: 0.5rem;
+    padding: 8px;
   }
 
   .brand img:nth-child(1) {
@@ -266,7 +266,7 @@ const toggleMenu = () => {
   }
 }
 
-.navbar-text{
+.navbar-text {
   margin-right: 100px;
   margin-top: 5px;
   margin-bottom: 15px;

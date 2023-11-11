@@ -6,7 +6,7 @@
         <div class="content">
           <h1 class="titulo">Instituciones Ligadas al Proyecto</h1>
           <div class="sub-titulo">
-            <p>Trabajando juntos, hacemos más...</p>
+            <h2>Trabajando juntos, hacemos más...</h2>
           </div>
         </div>
       </div>
@@ -117,7 +117,7 @@
 
 .titulo {
   color: var(--green-900);
-  font-size: 3rem;
+  font-size: 48px;
   font-weight: 700;
   font-family: var(--font);
 }
@@ -127,12 +127,12 @@
   font-family: var(--font);
   border-left: 2px solid var(--green-900);
   margin: 40px 0;
-  font-size: 1.8rem;
-  margin-top: 0.2rem;
+  font-size: 28px;
+  margin-top: 3px;
 }
-.sub-titulo p {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+.sub-titulo h2 {
+  margin-top: 32px;
+  margin-bottom: 16px;
 }
 .card-instituciones {
   margin-bottom: 40px;
@@ -161,12 +161,12 @@
 .card-instituciones h3 {
   font-weight: 700;
   line-height: 34px;
-  font-size: 1.2rem;
+  font-size: 19px;
   margin: 0 0 8px;
   font-family: var(--font);
 }
 .card-instituciones p {
-  font-size: 1rem;
+  font-size: 16px;
   color: var(--black);
 }
 .card-instituciones p i {
@@ -177,37 +177,37 @@
 
 @media (max-width: 768px) {
   .titulo {
-    font-size: 2rem;
+    font-size: 32px;
   }
   .sub-titulo {
-    font-size: 1.2rem;
+    font-size: 19px;
   }
   .card-instituciones {
     margin-bottom: 20px;
   }
   .card-instituciones h3 {
-    font-size: 1rem;
+    font-size: 16px;
   }
   .card-instituciones p {
-    font-size: 0.8rem;
+    font-size: 13px;
   }
 }
 
 @media (max-width: 576px) {
   .titulo {
-    font-size: 1.5rem;
+    font-size: 24px;
   }
   .sub-titulo {
-    font-size: 1rem;
+    font-size: 16px;
   }
   .card-instituciones {
     margin-bottom: 20px;
   }
   .card-instituciones h3 {
-    font-size: 0.8rem;
+    font-size: 13px;
   }
   .card-instituciones p {
-    font-size: 0.7rem;
+    font-size: 11px;
   }
 
   .section-directorio {
@@ -226,19 +226,19 @@
 
 @media (max-width: 400px) {
   .titulo {
-    font-size: 1.2rem;
+    font-size: 19px;
   }
   .sub-titulo {
-    font-size: 0.8rem;
+    font-size: 13px;
   }
   .card-instituciones {
     margin-bottom: 20px;
   }
   .card-instituciones h3 {
-    font-size: 0.7rem;
+    font-size: 11px;
   }
   .card-instituciones p {
-    font-size: 0.6rem;
+    font-size: 10px;
   }
 }
 p {
