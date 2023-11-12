@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+import ItemCardDirectory from "./ItemCardDirectory.vue";
+</script>
 <template>
   <section class="section-directorio">
     <div class="section-directorio-sombra">
@@ -12,86 +14,42 @@
       </div>
     </div>
   </section>
+
   <section class="section-card">
-    <div class="container py-5">
+    <div class="custom-container">
+      <div class="section-icon">
+        <i class="bi bi-layers-fill" />
+      </div>
+      <p class="mini-section-title">Directorio</p>
+      <h1 class="section-title">Nuestras Alianzas</h1>
       <div class="row">
-        <div class="col-lg-6 col-sm-6">
-          <div class="card-instituciones">
-            <div class="img-instituciones"></div>
-            <div class="content-instituciones">
-              <h3>Mesa de Cambio Climático de El Salvador</h3>
-              <p>
-                <i class="bi bi-globe"></i>
-                <a href="mesacambioclimatico@gmail.com" target="_blank"
-                  >mesacambioclimatico@gmail.com</a
-                >
-              </p>
-              <p><i class="bi bi-telephone"></i>7744-4576</p>
-              <p>
-                <i class="bi bi-geo-alt"></i>Mesa de Cambio Climático El
-                Salvador
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-sm-6">
-          <div class="card-instituciones">
-            <div class="img-instituciones"></div>
-            <div class="content-instituciones">
-              <h3>Ministerio de Medio Ambiente</h3>
-              <p>
-                <i class="bi bi-globe"></i>
-                <a href="https://marn.gob.sv/" target="_blank"
-                  >https://marn.gob.sv/</a
-                >
-              </p>
-              <p><i class="bi bi-telephone"></i>2665-8383</p>
-              <p>
-                <i class="bi bi-geo-alt"></i>Colonia Ciudad Jardín, calle Los
-                Naranjos, #22, San Miguel.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-sm-6">
-          <div class="card-instituciones">
-            <div class="img-instituciones"></div>
-            <div class="content-instituciones">
-              <h3>Fundación Segundo Montes</h3>
-              <p>
-                <i class="bi bi-globe"></i>
-                <a href="Fsegundomontes@gmail.com" target="_blank"
-                  >Fsegundomontes@gmail.com</a
-                >
-              </p>
-              <p><i class="bi bi-telephone"></i>2680-5574</p>
-              <p>
-                <i class="bi bi-geo-alt"></i>Carretera a Perkin Km 192 1/2,
-                caserío San Luis, Meanguera Morazán.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-sm-6">
-          <div class="card-instituciones">
-            <div class="img-instituciones"></div>
-            <div class="content-instituciones">
-              <h3>Programa de las Naciones Unidas para el Desarrollo</h3>
-              <p>
-                <i class="bi bi-envelope"></i>
-                <a href="registry.sv@undp.org" target="_blank"
-                  >registry.sv@undp.org</a
-                >
-              </p>
-              <p><i class="bi bi-telephone"></i>2263-0066</p>
-              <p>
-                <i class="bi bi-geo-alt"></i>Edificio Naciones Unidas, Blvd.
-                Orden de Malta Sur, No. 2-B, Santa Elena, Antiguo Cuscatlan, La
-                Libertad
-              </p>
-            </div>
-          </div>
-        </div>
+        <ItemCardDirectory
+          title="Mesa de Cambio Climático de El Salvador"
+          email="mesacambioclimatico@gmail.com"
+          phoneNumer="7744-4576"
+          address="San Salvador, El Salvador."
+        />
+
+        <ItemCardDirectory
+          title="Ministerio de Medio Ambiente"
+          webSite="https://www.ambiente.gob.sv/"
+          phoneNumer="2665-8383"
+          address="Colonia Ciudad Jardín, calle Los Naranjos, #22, San Miguel."
+        />
+
+        <ItemCardDirectory
+          title="Fundación Segundo Montes"
+          email="Fsegundomontes@gmail.com"
+          phoneNumer="2680-5574"
+          address="Carretera a Perkin Km 192 1/2, caserío San Luis, Meanguera Morazán"
+        />
+
+        <ItemCardDirectory
+          title="Programa de las Naciones Unidas para el Desarrollo"
+          email="https://www.undp.org/es"
+          phoneNumer="2263-0066"
+          address="Edificio Naciones Unidas, Blvd. Orden de Malta Sur, No. 2-B, Elena, Antiguo Cuscatlan, La Libertad."
+        />
       </div>
     </div>
   </section>
@@ -119,12 +77,11 @@
   color: var(--green-900);
   font-size: 48px;
   font-weight: 700;
-  font-family: var(--font);
 }
 .sub-titulo {
   color: var(--white);
   padding-left: 20px;
-  font-family: var(--font);
+
   border-left: 2px solid var(--green-900);
   margin: 40px 0;
   font-size: 28px;
@@ -133,46 +90,6 @@
 .sub-titulo h2 {
   margin-top: 32px;
   margin-bottom: 16px;
-}
-.card-instituciones {
-  margin-bottom: 40px;
-  width: 100%;
-  height: 250px;
-  float: left;
-  border-radius: 5px;
-  background: var(--white);
-  overflow: hidden;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-}
-.img-instituciones {
-  width: 100%;
-  float: left;
-  position: relative;
-  overflow: hidden;
-}
-.img-instituciones img {
-  width: 50px;
-  height: auto;
-}
-.content-instituciones {
-  padding: 20px 30px;
-  clear: both;
-}
-.card-instituciones h3 {
-  font-weight: 700;
-  line-height: 34px;
-  font-size: 19px;
-  margin: 0 0 8px;
-  font-family: var(--font);
-}
-.card-instituciones p {
-  font-size: 16px;
-  color: var(--black);
-}
-.card-instituciones p i {
-  color: var(--green-900);
-  margin-right: 5px;
-  padding: 50px 0px;
 }
 
 @media (max-width: 768px) {
@@ -240,8 +157,5 @@
   .card-instituciones p {
     font-size: 10px;
   }
-}
-p {
-  font-family: var(--font);
 }
 </style>

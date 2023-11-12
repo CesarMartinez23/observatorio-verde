@@ -71,7 +71,6 @@ defineProps({
 .carousel-caption h1 {
   color: var(--white);
   font-size: 88px;
-  font-family: var(--font);
   font-weight: 700;
   line-height: 90px;
   width: 75%;
@@ -83,7 +82,6 @@ defineProps({
   font-weight: 500;
   line-height: 30px;
   letter-spacing: var(--letter-spacing2);
-  font-family: var(--font);
   color: var(--white);
   width: 75%;
 }
@@ -109,9 +107,7 @@ defineProps({
   background-color: var(--green-900);
   font-size: 20px;
   color: #ceffe5;
-  /* line-height: 28px; */
   letter-spacing: var(--letter-spacing2);
-  font-family: var(--font);
   text-align: center;
   padding: 8px 16px;
 }

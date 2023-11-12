@@ -25,9 +25,5 @@
   padding: 24px 0;
   font-size: 16px;
   color: var(--gray);
-  font-family: var(--font);
-  /* position: relative;
-  bottom: 0;
-  width: 100%; */
 }
 </style>

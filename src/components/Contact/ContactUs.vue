@@ -27,7 +27,7 @@
   <!-- Seccion forma de contactanos -->
   <section class="section-contact py-5">
     <div class="container text-center">
-      <div>
+      <div class="section-icon">
         <i class="bi bi-layers-fill"></i>
       </div>
       <p class="mini-section-title">Contactanos</p>
@@ -48,7 +48,7 @@
               <div class="info-text">
                 <i class="bi bi-geo-alt"></i>
                 <p>
-                  <strong>UBG Campos San Miguel</strong><br />
+                  <strong>UBG Campus San Miguel</strong><br />
                   Calle Las Flores y Avenida Las Magnolias, <br />
                   Avenida Colonia Escalon, San Miguel
                 </p>
@@ -56,18 +56,18 @@
               <div class="info-text">
                 <i class="bi bi-geo-alt"></i>
                 <p>
-                  <strong>UBG Campos Salitre</strong><br />
+                  <strong>UBG Campus Salitre</strong><br />
                   Calle Antigua a Quelepa, Caserío El Salitre, San Miguel.
                   <br />
                   Entrada contigua a Centro Escolar el Salitre
                 </p>
               </div>
               <div class="info-text">
-                <i class="bi bi-envelope-fill"></i>
+                <i class="bi bi-envelope"></i>
                 <p>observatorio@ugb.edu.sv</p>
               </div>
               <div class="info-text">
-                <i class="bi bi-telephone-fill"></i>
+                <i class="bi bi-telephone"></i>
                 <p>
                   +503 2645 – 6585 <br />
                   +503 7743 – 4301
@@ -139,7 +139,6 @@
   font-size: 20px;
   color: var(--gray);
   letter-spacing: var(--letter-spacing2);
-  font-family: var(--font);
   text-align: center;
 }
 .seccion-mapa {
@@ -167,7 +166,6 @@
   padding: 0 0 10px 42px;
   line-height: 30px;
   font-size: 16px;
-  font-family: var(--font);
   color: var(--gray);
 }
 

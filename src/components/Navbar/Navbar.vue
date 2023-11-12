@@ -64,10 +64,7 @@ const toggleMenu = () => {
               >
             </li>
             <span class="nav-item button-contact-mobile" style="float: right">
-              <RouterLink
-                class="nav-link contact-mobile"
-                :to="{ name: 'contacto' }"
-              >
+              <RouterLink class="nav-link" :to="{ name: 'contacto' }">
                 Contáctanos
               </RouterLink>
             </span>
@@ -216,6 +213,12 @@ const toggleMenu = () => {
   display: none;
 }
 
+.navbar-text {
+  margin-right: 100px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
 @media (max-width: 992px) {
   .navbar-nav,
   .btn {
@@ -244,12 +247,6 @@ const toggleMenu = () => {
   .button-contact-mobile {
     display: block;
   }
-
-  .contact-mobile {
-    font-size: 24px;
-    font-weight: 600;
-    text-align: center;
-  }
 }
 
 @media (max-width: 576px) {
@@ -264,11 +261,5 @@ const toggleMenu = () => {
   .social-links {
     padding: 0;
   }
-}
-
-.navbar-text {
-  margin-right: 100px;
-  margin-top: 5px;
-  margin-bottom: 15px;
 }
 </style>

@@ -1,50 +1,48 @@
 <script setup>
-import ItemWeDo from "./ItemWeDo.vue";
+import ItemCardWeDo from "./ItemCardWeDo.vue";
 </script>
 
 <template>
   <section class="custom-container">
-    <div class="container">
-      <div class="section-icon">
-        <i class="bi bi-layers-fill" />
-      </div>
-      <p class="mini-section-title">Nuestras actividades</p>
-      <h1 class="section-title">¿Qué hacemos?</h1>
-      <div class="row">
-        <div class="col-lg-6 content-column">
-          <ItemWeDo
-            title="Participar"
-            description="En congresos ambientales y así mantenernos informados y
+    <div class="section-icon">
+      <i class="bi bi-layers-fill" />
+    </div>
+    <p class="mini-section-title">Nuestras actividades</p>
+    <h1 class="section-title">¿Qué hacemos?</h1>
+    <div class="row">
+      <div class="col-lg-6 content-column">
+        <ItemCardWeDo
+          title="Participar"
+          description="En congresos ambientales y así mantenernos informados y
                 capacitados en los servicios para la zona oriental."
-          >
-            <template v-slot:icon>
-              <i class="bi bi-people-fill"></i>
-            </template>
-          </ItemWeDo>
+        >
+          <template v-slot:icon>
+            <i class="bi bi-people"></i>
+          </template>
+        </ItemCardWeDo>
 
-          <ItemWeDo
-            title="Generar"
-            description="Oportunidades que le permitan a los estudiantes realizar
+        <ItemCardWeDo
+          title="Generar"
+          description="Oportunidades que le permitan a los estudiantes realizar
                 prácticas u horas sociales para el desarrollo de su carrera."
-          >
-            <template v-slot:icon>
-              <i class="bi bi-lightning-charge-fill"></i>
-            </template>
-          </ItemWeDo>
+        >
+          <template v-slot:icon>
+            <i class="bi bi-gear"></i>
+          </template>
+        </ItemCardWeDo>
 
-          <ItemWeDo
-            title="Fortalecer"
-            description="La cultura y educación ambiental sostenible mediante alianzas
+        <ItemCardWeDo
+          title="Fortalecer"
+          description="La cultura y educación ambiental sostenible mediante alianzas
                 con socios estratégicos."
-          >
-            <template v-slot:icon>
-              <i class="bi bi-award-fill"></i>
-            </template>
-          </ItemWeDo>
-        </div>
-        <div class="col-lg-6 image-column ml-auto mr-0">
-          <img src="/img/carrouselImages/4.jpg" alt="Imagen" />
-        </div>
+        >
+          <template v-slot:icon>
+            <i class="bi bi-award"></i>
+          </template>
+        </ItemCardWeDo>
+      </div>
+      <div class="col-lg-6 image-column ml-auto mr-0">
+        <img src="/img/carrouselImages/4.jpg" alt="Imagen" />
       </div>
     </div>
   </section>

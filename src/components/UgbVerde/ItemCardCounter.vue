@@ -1,6 +1,6 @@
 <script setup>
 defineProps({
-  number: {
+  numberTitle: {
     type: Number,
     required: true,
   },
@@ -25,20 +25,32 @@ defineProps({
       <slot name="icon"></slot>
     </div>
     <span class="timer counter alt-font appear" data-to="1" data-speed="7000"
-      >{{ number }}
+      >{{ numberTitle }}
     </span>
     <span class="counter-title">{{ description }}</span>
   </div>
 </template>
 
 <style scoped>
+.counter-section {
+  border: 1px solid #ebebeb;
+  padding: 20px;
+  margin-bottom: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.counter-section:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out 0s;
+}
 
 .counter-section span.counter {
   font-size: 40px;
   color: #000;
   line-height: 60px;
   display: block;
-  font-family: var(--font);
   letter-spacing: 2px;
   font-weight: bold;
 }
@@ -49,7 +61,6 @@ defineProps({
   text-justify: inter-word;
   color: var(--black);
   padding: 0 16px;
-  font-family: var(--font);
 }
 
 .counter-title {
@@ -60,11 +71,5 @@ defineProps({
   letter-spacing: 0.55px;
   float: left;
   margin-right: 10px;
-}
-
-.medium-icon {
-  font-size: 40px !important;
-  margin-bottom: 15px !important;
-  color: var(--green-900);
 }
 </style>
