@@ -112,7 +112,7 @@
 }
 
 .section-coordination {
-  background-image: url(/img/contacto/background.svg);
+  background-image: url(/img/contactImages/background.svg);
   background-size: cover;
   background-position: center;
 }
