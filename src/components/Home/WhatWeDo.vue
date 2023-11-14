@@ -8,7 +8,7 @@ import ItemCardWeDo from "./ItemCardWeDo.vue";
       <i class="bi bi-layers-fill" />
     </div>
     <p class="mini-section-title">Nuestras actividades</p>
-    <h1 class="section-title">¿Qué hacemos?</h1>
+    <h1 class="section-title">¿Qu&eacute; Hacemos?</h1>
     <div class="row">
       <div class="col-lg-6 content-column">
         <ItemCardWeDo
@@ -41,7 +41,9 @@ import ItemCardWeDo from "./ItemCardWeDo.vue";
           </template>
         </ItemCardWeDo>
       </div>
-      <div class="col-lg-6 image-column ml-auto mr-0">
+      <div
+        class="col-lg-6 image-column ml-auto mr-0 d-flex justify-content-center align-items-center"
+      >
         <img src="/img/carrouselImages/4.jpg" alt="Imagen" />
       </div>
     </div>
@@ -53,70 +55,11 @@ import ItemCardWeDo from "./ItemCardWeDo.vue";
   background-color: var(--white);
 }
 
-.image-column {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .image-column img {
   width: 100%;
   height: 100%;
   border-radius: 0;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.75);
   object-fit: cover;
-}
-
-@media (max-width: 991.98px) {
-  .we-do {
-    padding: 16px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-    border-radius: 16px;
-    margin-bottom: 32px;
-  }
-
-  .we-do:hover {
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    transform: scale(1.05);
-  }
-
-  .we-do-title {
-    text-align: center;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .custom-container {
-    padding: 32px;
-  }
-
-  .we-do {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .we-do-icon {
-    margin-right: 0;
-    margin-bottom: 16px;
-  }
-
-  .we-do-description {
-    text-align: center;
-  }
-}
-
-@media (max-width: 575.98px) {
-  .we-do-title {
-    font-size: 24px;
-  }
-
-  .we-do-icon {
-    font-size: 32px;
-  }
-
-  .we-do-description {
-    font-size: 19px;
-  }
 }
 </style>

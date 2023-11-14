@@ -50,37 +50,51 @@ defineProps({
   width: 100%;
   height: 100%;
   text-align: start;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   background: var(--white);
   overflow: hidden;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.6rem 2rem rgba(0, 0, 0, 0.15);
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
 
 .card-instituciones:hover {
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.6rem 2rem 0 rgba(0, 0, 0, 0.3);
   transform: scale(1.05);
 }
 
 .content-instituciones {
-  padding: 30px;
+  padding: 2rem;
   clear: both;
 }
 
 .card-instituciones h3 {
   font-weight: 700;
-  line-height: 34px;
-  font-size: 19px;
-  margin: 0 0 8px;
+  font-size: var(--text);
+  margin: 0 0 0.8rem;
 }
 .card-instituciones p {
-  font-size: 16px;
+  font-size: var(--paragraph);
   color: var(--black);
 }
 .card-instituciones p i {
   color: var(--green-900);
-  margin-right: 5px;
-  padding: 50px 0px;
+  margin-right: 0.5rem;
+  padding: 5rem 0;
+}
+
+@media (max-width: 768px) {
+  /* change font size card */
+  .card-instituciones h3 {
+    font-size: 1.5rem;
+  }
+
+  .card-instituciones p {
+    font-size: 1rem;
+  }
+
+  .card-instituciones p i {
+    font-size: 1.5rem;
+  }
 }
 </style>

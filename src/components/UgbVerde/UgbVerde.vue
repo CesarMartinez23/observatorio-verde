@@ -16,25 +16,23 @@ import ItemCardInfo from "./ItemCardInfo.vue";
   </section>
 
   <section class="custom-container">
-    <div class="hero">
-      <div class="row">
-        <div class="col-lg-6 d-flex justify-content-center flex-column py-3">
-          <div class="section-icon">
-            <i class="bi bi-layers-fill"></i>
-          </div>
-          <p class="mini-section-title">Orígenes</p>
-          <h1 class="section-title">Sobre el proyecto</h1>
-          <p class="content-description">
-            El 23 de abril del 2016 iniciamos nuestro proyecto UGB Verde, se
-            encarga de fomentar las buenas prácticas ambientales y expandirlas
-            en la zona oriental. El proyecto UGB Verde consiste en preservar la
-            naturaleza garantizando una calidad de vida a nuestra comunidad UGB,
-            implementando pequeñas acciones que generen grandes cambios.
-          </p>
+    <div class="row">
+      <div class="col-lg-6 d-flex justify-content-center flex-column py-3">
+        <div class="section-icon">
+          <i class="bi bi-layers-fill"></i>
         </div>
-        <div class="col-lg-6 d-flex justify-content-center">
-          <img src="/img/ugbVerdeImages/mano.jpg" class="content-img" />
-        </div>
+        <p class="mini-section-title">Orígenes</p>
+        <h1 class="section-title">Sobre El Proyecto</h1>
+        <p class="content-description">
+          El 23 de abril del 2016 iniciamos nuestro proyecto UGB Verde, se
+          encarga de fomentar las buenas prácticas ambientales y expandirlas en
+          la zona oriental. El proyecto UGB Verde consiste en preservar la
+          naturaleza garantizando una calidad de vida a nuestra comunidad UGB,
+          implementando pequeñas acciones que generen grandes cambios.
+        </p>
+      </div>
+      <div class="col-lg-6 d-flex justify-content-center">
+        <img src="/img/ugbVerdeImages/mano.jpg" class="content-img" />
       </div>
     </div>
   </section>
@@ -49,7 +47,7 @@ import ItemCardInfo from "./ItemCardInfo.vue";
           <i class="bi bi-layers-fill"></i>
         </div>
         <p class="mini-section-title">Logros</p>
-        <h1 class="section-title">Datos relevantes</h1>
+        <h1 class="section-title">Datos Relevantes</h1>
 
         <div class="row">
           <ItemCardCounter
@@ -118,21 +116,20 @@ import ItemCardInfo from "./ItemCardInfo.vue";
 <style scoped>
 i {
   display: block;
-  margin: 0 0 10px;
+  margin: 0 0 1rem 0;
 }
 .section-ugb-verde {
   background-image: url(/img/ugbVerdeImages/portadaUgbVerde.jpg);
   background-position: center;
   background-size: cover;
-  padding: 50px 0px;
+  padding: 5rem 0;
 }
 .contenedor {
   background-color: #ffffffd9;
-  padding: 32px;
-  width: 1000px;
-  border-radius: 5px;
-  box-shadow: 12px 10px 26px rgba(0, 0, 0, 0.08);
-  border: 1px solid #e8f5e9;
+  padding: 3.2rem;
+  width: 100rem;
+  border-radius: 0.5rem;
+  box-shadow: 1.2rem 1rem 2.6rem rgba(0, 0, 0, 0.08);
 }
 
 .subtitulo {
@@ -143,51 +140,10 @@ i {
 .content-img {
   width: 75%;
   height: 100%;
-  box-shadow: 12px 10px 26px rgba(0, 0, 0, 0.08);
+  box-shadow: 1.2rem 1rem 2.6rem rgba(0, 0, 0, 0.08);
 }
 
 .ack {
   background-color: var(--f4);
-}
-
-@media (max-width: 768px) {
-  .subtitulo {
-    font-size: 24px;
-  }
-
-  .content-img {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-@media (max-width: 576px) {
-  .subtitulo {
-    font-size: 19px;
-  }
-
-  .content-img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .hero {
-    padding: 32px;
-  }
-
-  .container {
-    padding: 0px 32px;
-  }
-}
-
-@media (max-width: 375px) {
-  .subtitulo {
-    font-size: 19px;
-  }
-
-  .content-img {
-    width: 100%;
-    height: 100%;
-  }
 }
 </style>

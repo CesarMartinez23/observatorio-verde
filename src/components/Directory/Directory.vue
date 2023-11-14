@@ -70,92 +70,32 @@ import ItemCardDirectory from "./ItemCardDirectory.vue";
   inset: 0;
 }
 .content {
-  padding: 200px 0;
+  padding: 20rem 5rem;
 }
 
 .titulo {
   color: var(--green-900);
-  font-size: 48px;
+  font-size: var(--h1);
   font-weight: 700;
 }
 .sub-titulo {
   color: var(--white);
-  padding-left: 20px;
-
-  border-left: 2px solid var(--green-900);
+  padding-left: 2rem;
+  border-left: 0.2rem solid var(--green-900);
   margin: 40px 0;
-  font-size: 28px;
-  margin-top: 3px;
+  font-size: var(--h2);
+  margin-top: 0.3rem;
 }
 .sub-titulo h2 {
-  margin-top: 32px;
-  margin-bottom: 16px;
+  margin-top: 3.2rem;
+  margin-bottom: 1.6rem;
 }
 
 @media (max-width: 768px) {
-  .titulo {
-    font-size: 32px;
-  }
+  .titulo,
   .sub-titulo {
-    font-size: 19px;
-  }
-  .card-instituciones {
-    margin-bottom: 20px;
-  }
-  .card-instituciones h3 {
-    font-size: 16px;
-  }
-  .card-instituciones p {
-    font-size: 13px;
-  }
-}
-
-@media (max-width: 576px) {
-  .titulo {
-    font-size: 24px;
-  }
-  .sub-titulo {
-    font-size: 16px;
-  }
-  .card-instituciones {
-    margin-bottom: 20px;
-  }
-  .card-instituciones h3 {
-    font-size: 13px;
-  }
-  .card-instituciones p {
-    font-size: 11px;
-  }
-
-  .section-directorio {
-    min-height: 60vh;
-  }
-
-  .content {
-    padding: 100px 0;
-  }
-
-  .row {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-}
-
-@media (max-width: 400px) {
-  .titulo {
-    font-size: 19px;
-  }
-  .sub-titulo {
-    font-size: 13px;
-  }
-  .card-instituciones {
-    margin-bottom: 20px;
-  }
-  .card-instituciones h3 {
-    font-size: 11px;
-  }
-  .card-instituciones p {
-    font-size: 10px;
+    font-size: 3rem;
+    text-align: center;
   }
 }
 </style>

@@ -56,14 +56,14 @@ body {
   color: var(--black);
   font-size: var(--h1);
   font-weight: bold;
-  margin-bottom: 32px;
+  margin-bottom: 3.2rem;
   font-family: var(--font);
   text-align: center;
   letter-spacing: var(--letter-spacing);
 }
 
 .custom-container {
-  padding: 64px;
+  padding: 6.4rem;
   text-align: center;
 }
 
@@ -80,21 +80,20 @@ body {
   position: relative;
   display: inline-block;
   font-size: var(--paragraph);
-  line-height: 16px;
+  line-height: 1.6rem;
   color: var(--gray);
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
   text-align: center;
 }
 
 .content-description {
   font-size: var(--text);
-  margin-top: 16px;
+  margin-top: 1.5rem;
   text-align: justify;
   color: var(--black);
-  padding: 0 16px;
   font-family: var(--font);
 }
 
@@ -107,68 +106,8 @@ body {
 
 .icons {
   font-size: 4.5rem;
-  margin-right: 10px;
+  margin-right: 1rem;
   color: var(--green-900);
   display: flex;
   justify-content: center;
-}
-
-/* Section: What We Do */
-.we-do {
-  display: flex;
-}
-
-.we-do-title {
-  font-size: var(--h2);
-  font-weight: bold;
-  margin: 0;
-  color: var(--black);
-  text-align: left;
-  letter-spacing: var(--letter-spacing);
-  margin-top: 8px;
-}
-
-.we-do-description {
-  font-size: var(--text);
-  margin-top: 10px;
-  margin-right: 30px;
-  text-align: justify;
-  color: var(--black);
-}
-
-/* End What We Do */
-
-/* Here Working */
-@media (max-width: 991.98px) {
-  .video-column {
-    margin-bottom: 32px;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .custom-container {
-    padding: 32px;
-  }
-
-  .section-title {
-    font-size: 32px;
-  }
-
-  .content-description {
-    font-size: 22px;
-  }
-}
-
-@media (max-width: 575.98px) {
-  .section-title {
-    font-size: 28px;
-  }
-
-  .content-description {
-    font-size: 19px;
-  }
-
-  .content-button {
-    font-size: 16px;
-  }
 }

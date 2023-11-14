@@ -1,25 +1,24 @@
 <script setup></script>
 
 <template>
-  <main class="custom-container">
+  <main class="custom-container d-flex justify-content-between flex-wrap">
     <div class="row">
-      <div class="col-lg-7 video-column">
-        <div class="video-wrapper">
+      <div class="col-lg-7 video">
+        <div class="w-100 h-100">
           <iframe
-            class="video"
+            class="w-100 h-100"
             src="https://www.youtube.com/embed/vTou7sBeAaQ"
-            frameborder="0"
             allowfullscreen
           />
         </div>
       </div>
-      <div class="col-lg-5 content-column">
+      <div class="col-lg-5 container">
         <div class="section-icon">
           <i class="bi bi-layers-fill" />
         </div>
-        <p class="mini-section-title">Conoce más</p>
-        <h1 class="section-title">Sobre nosotros</h1>
-        <p class="content-description">
+        <p class="mini-section-title">Conoce m&aacute;s</p>
+        <h1 class="section-title">Sobre Nosotros</h1>
+        <p class="content-description ps-lg-4">
           A finales del año 2019, la Universidad Gerardo Barrios, a través de la
           Vicerrectoría de Investigación presentó el Observatorio Verde de
           Desarrollo Sostenible, que surge después de desarrollar dos simposios
@@ -39,23 +38,10 @@
   background-color: var(--f4);
 }
 
-.video-column {
-  display: flex;
-  justify-content: center;
-}
-
-.video-wrapper {
-  position: relative;
-  width: 100%;
-  margin-top: 30px;
-  margin-bottom: 15px;
-}
-
-.video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+@media (max-width: 992px) {
+  .video {
+    margin-bottom: 2.5rem;
+    height: 30rem;
+  }
 }
 </style>

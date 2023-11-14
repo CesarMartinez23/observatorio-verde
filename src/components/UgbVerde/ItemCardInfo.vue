@@ -27,7 +27,8 @@ defineProps({
   border: 1px solid #fff;
   overflow: hidden;
   color: var(--color-text);
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0 1rem 2rem 0,
+    rgba(0, 0, 0, 0.23) 0 0.5rem 0.5rem 0;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
@@ -37,7 +38,7 @@ defineProps({
 }
 
 .card-header1 {
-  height: 5px;
+  height: 0.5rem;
   width: 100%;
   display: grid;
   place-items: center;
@@ -56,7 +57,7 @@ defineProps({
   text-align: justify;
   font-size: 1.5em;
   padding: 1rem;
-  height: 300px;
+  height: 30rem;
 }
 
 .card-header1.four {
