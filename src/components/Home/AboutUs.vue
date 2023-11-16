@@ -2,6 +2,7 @@
 
 <template>
   <main class="custom-container d-flex justify-content-between flex-wrap">
+    <div class="container">
     <div class="row">
       <div class="col-lg-7 video">
         <div class="w-100 h-100">
@@ -29,6 +30,7 @@
           de Desarrollo Sostenibles desde El Salvador.
         </p>
       </div>
+    </div>
     </div>
   </main>
 </template>

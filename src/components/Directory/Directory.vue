@@ -17,39 +17,41 @@ import ItemCardDirectory from "./ItemCardDirectory.vue";
 
   <section class="section-card">
     <div class="custom-container">
-      <div class="section-icon">
-        <i class="bi bi-layers-fill" />
-      </div>
-      <p class="mini-section-title">Directorio</p>
-      <h1 class="section-title">Nuestras Alianzas</h1>
-      <div class="row">
-        <ItemCardDirectory
-          title="Mesa de Cambio Climático de El Salvador"
-          email="mesacambioclimatico@gmail.com"
-          phoneNumer="7744-4576"
-          address="San Salvador, El Salvador."
-        />
+      <div class="container">
+        <div class="section-icon">
+          <i class="bi bi-layers-fill" />
+        </div>
+        <p class="mini-section-title">Directorio</p>
+        <h1 class="section-title">Nuestras Alianzas</h1>
+        <div class="row">
+          <ItemCardDirectory
+            title="Mesa de Cambio Climático de El Salvador"
+            email="mesacambioclimatico@gmail.com"
+            phoneNumer="7744-4576"
+            address="San Salvador, El Salvador."
+          />
 
-        <ItemCardDirectory
-          title="Ministerio de Medio Ambiente"
-          webSite="https://www.ambiente.gob.sv/"
-          phoneNumer="2665-8383"
-          address="Colonia Ciudad Jardín, calle Los Naranjos, #22, San Miguel."
-        />
+          <ItemCardDirectory
+            title="Ministerio de Medio Ambiente"
+            webSite="https://www.ambiente.gob.sv/"
+            phoneNumer="2665-8383"
+            address="Colonia Ciudad Jardín, calle Los Naranjos, #22, San Miguel."
+          />
 
-        <ItemCardDirectory
-          title="Fundación Segundo Montes"
-          email="Fsegundomontes@gmail.com"
-          phoneNumer="2680-5574"
-          address="Carretera a Perkin Km 192 1/2, caserío San Luis, Meanguera Morazán"
-        />
+          <ItemCardDirectory
+            title="Fundación Segundo Montes"
+            email="Fsegundomontes@gmail.com"
+            phoneNumer="2680-5574"
+            address="Carretera a Perkin Km 192 1/2, caserío San Luis, Meanguera Morazán"
+          />
 
-        <ItemCardDirectory
-          title="Programa de las Naciones Unidas para el Desarrollo"
-          email="https://www.undp.org/es"
-          phoneNumer="2263-0066"
-          address="Edificio Naciones Unidas, Blvd. Orden de Malta Sur, No. 2-B, Elena, Antiguo Cuscatlan, La Libertad."
-        />
+          <ItemCardDirectory
+            title="Programa de las Naciones Unidas para el Desarrollo"
+            email="https://www.undp.org/es"
+            phoneNumer="2263-0066"
+            address="Edificio Naciones Unidas, Blvd. Orden de Malta Sur, No. 2-B, Elena, Antiguo Cuscatlan, La Libertad."
+          />
+        </div>
       </div>
     </div>
   </section>

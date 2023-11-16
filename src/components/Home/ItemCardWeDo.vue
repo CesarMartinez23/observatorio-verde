@@ -30,6 +30,7 @@ defineProps({
   font-size: var(--h2);
   font-weight: bold;
   letter-spacing: var(--letter-spacing);
+  margin-top: 1rem;
 }
 
 .we-do-description {
