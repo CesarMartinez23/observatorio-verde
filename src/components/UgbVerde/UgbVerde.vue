@@ -68,7 +68,7 @@ import ItemCardInfo from "./ItemCardInfo.vue";
             >
               <template v-slot:icon>
                 <!-- Cars -->
-                <i class="bi bi-car-front-fill medium-icon"></i>
+                <i class="bi bi-grid medium-icon"></i>
               </template>
             </ItemCardCounter>
 

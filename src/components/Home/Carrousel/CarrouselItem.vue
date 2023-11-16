@@ -1,25 +1,33 @@
 <script setup>
 defineProps({
-  item: {
-    type: Object,
+  title: {
+    type: String,
+    required: true,
+  },
+  description: {
+    type: String,
+    required: true,
+  },
+  buttonLink: {
+    type: String,
+    required: true,
+  },
+  buttonText: {
+    type: String,
     required: true,
   },
 });
 </script>
 
 <template>
-  <div
-    class="carousel-item overlayed"
-    :class="[item.id == '1' ? 'active' : '']"
-    :data-bs-interval="item.intervalItem"
-  >
-    <img :src="'/img/carrouselImages/' + item.imageItem" :alt="item.imageAlt" />
+  <div id="carouselExampleAutoplaying" class="carousel-item overlayed">
+    <slot name="image"></slot>
     <div class="carousel-caption">
-      <h1>{{ item.titleItem }}</h1>
-      <p>{{ item.descriptionItem }}</p>
-      <a :href="item.buttonLink" target="_blank"
-        ><button>{{ item.buttonText }}</button></a
-      >
+      <h1>{{ title }}</h1>
+      <p>{{ description }}</p>
+      <a :href="buttonLink" target="_blank"
+        ><button>{{ buttonText }}</button>
+      </a>
     </div>
     <div class="info">
       <span>Ejecutamos Proyectos Para Preservar....</span>
@@ -28,13 +36,6 @@ defineProps({
 </template>
 
 <style scoped>
-.carousel-item img {
-  display: block;
-  height: 70vh;
-  width: 100%;
-  object-fit: cover;
-}
-
 .overlayed {
   position: relative;
 }
@@ -70,17 +71,17 @@ defineProps({
 
 .carousel-caption h1 {
   color: var(--white);
-  font-size: 88px;
+  font-size: 8rem;
   font-weight: 700;
-  line-height: 90px;
+  line-height: 9rem;
   width: 75%;
   letter-spacing: var(--letter-spacing);
 }
 
 .carousel-caption p {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 500;
-  line-height: 30px;
+  line-height: 3rem;
   letter-spacing: var(--letter-spacing2);
   color: var(--white);
   width: 75%;
@@ -91,44 +92,44 @@ defineProps({
   border: none;
   color: var(--white);
   font-weight: 600;
-  padding: 10px 15px;
-  font-size: 24px;
-  margin-top: 16px;
-  padding: 10px 50px 10px;
+  font-size: 2.2rem;
+  margin-top: 2rem;
+  padding: 1rem 5rem 1rem;
   transition: all 0.3s ease-in-out;
 }
 
 .carousel-caption button:hover {
   background-color: var(--white);
   color: var(--green-900);
+  transform: scale(1.1);
 }
 
 .info {
   background-color: var(--green-900);
-  font-size: 20px;
+  font-size: 2rem;
   color: #ceffe5;
   letter-spacing: var(--letter-spacing2);
   text-align: center;
-  padding: 8px 16px;
+  padding: 0.8rem 1.6rem;
 }
 
 @media (max-width: 768px) {
   .carousel-caption h1 {
-    font-size: 48px;
-    line-height: 50px;
+    font-size: 4.5rem;
+    line-height: 5rem;
     width: 100%;
   }
 
   .carousel-caption p {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1.5rem;
+    line-height: 2rem;
     width: 100%;
   }
 
   .carousel-caption button {
-    font-size: 16px;
-    margin-top: 16px;
-    padding: 10px 30px 10px;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    padding: 1rem 3rem 1rem;
   }
 }
 </style>

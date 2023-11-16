@@ -105,11 +105,10 @@ body {
 }
 
 .icons {
-  font-size: 3.0rem;
+  font-size: 3rem;
   margin-right: 1rem;
   color: var(--green-900);
   display: flex;
   justify-content: center;
   text-align: center;
-
 }

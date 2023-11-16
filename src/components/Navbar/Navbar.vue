@@ -54,6 +54,11 @@ const toggleMenu = () => {
               >
             </li>
             <li class="nav-item">
+              <RouterLink class="nav-link" :to="{ name: 'sobre-nosotros' }">
+                Sobre Nosotros</RouterLink
+              >
+            </li>
+            <li class="nav-item">
               <RouterLink class="nav-link" :to="{ name: 'ugb-verde' }">
                 UGB Verde</RouterLink
               >
@@ -130,26 +135,26 @@ const toggleMenu = () => {
   top: 0;
   z-index: 100;
   background-color: #fff;
-  padding: 2px;
-  box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.05);
+  padding: 0.2rem;
+  box-shadow: 0 1rem 6rem 0 rgba(0, 0, 0, 0.05);
 }
 
 .ugbLogo {
-  max-width: 160px;
+  max-width: 16rem;
 }
 .ugbVerde {
-  max-width: 65px;
+  max-width: 6.5rem;
 }
 .brand img:nth-child(1) {
-  margin-right: 16px;
+  margin-right: 1.6rem;
 }
 
 .nav-link {
   color: var(--black);
   transition: all 0.8s ease;
-  padding: 16px 16px;
-  margin: 0 16px;
-  font-size: 19px;
+  padding: 1.6rem;
+  margin: 0 1.6rem;
+  font-size: 1.6rem;
   font-weight: 500;
   text-align: center;
 }
@@ -158,9 +163,9 @@ const toggleMenu = () => {
   background-color: var(--green-900);
   color: var(--white);
   border-radius: 0;
-  padding: 8px 16px;
+  padding: 0.8rem 1.6rem;
   transition: all 0.8s ease;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 500;
 }
 
@@ -179,7 +184,7 @@ const toggleMenu = () => {
 .navbar-toggler {
   border: none;
   outline: none;
-  margin-right: 8px;
+  margin-right: 0.8rem;
   color: var(--white);
   background-color: var(--black);
 }
@@ -191,8 +196,8 @@ const toggleMenu = () => {
 .nav-top {
   background-color: var(--black);
   position: relative;
-  padding: 8px;
-  max-height: 88px;
+  padding: 0.8rem;
+  max-height: 8.8rem;
 }
 
 .social-links {
@@ -206,7 +211,7 @@ const toggleMenu = () => {
 }
 
 .brand {
-  padding-left: 10px;
+  padding-left: 1rem;
 }
 
 .button-contact-mobile {
@@ -214,9 +219,9 @@ const toggleMenu = () => {
 }
 
 .navbar-text {
-  margin-right: 100px;
-  margin-top: 5px;
-  margin-bottom: 15px;
+  margin-right: 10rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
 @media (max-width: 992px) {
@@ -229,15 +234,15 @@ const toggleMenu = () => {
   }
 
   .navbar-collapse {
-    padding: 16px 8px;
+    padding: 1.6rem 0.8rem;
   }
 
   .nav-link {
-    margin: 8px 0;
+    margin: 0.8rem 0;
   }
 
   .social-links {
-    margin-top: 16px;
+    margin-top: 1.6rem;
   }
 
   .button-contact {
@@ -251,7 +256,7 @@ const toggleMenu = () => {
 
 @media (max-width: 576px) {
   .header {
-    padding: 8px;
+    padding: 0.8rem;
   }
 
   .brand img:nth-child(1) {

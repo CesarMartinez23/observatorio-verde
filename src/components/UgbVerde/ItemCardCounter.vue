@@ -53,11 +53,11 @@ defineProps({
   display: block;
   font-weight: bold;
 }
+
 .counter-title {
   font-size: var(--text);
   margin-top: 1.6rem;
   text-align: center;
-  text-justify: inter-word;
   color: var(--black);
   padding: 0 1.6rem;
 }
@@ -65,6 +65,7 @@ defineProps({
 .counter-title {
   float: left;
 }
+
 .counter-style2 span.counter {
   float: left;
   margin-right: 1rem;

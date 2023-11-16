@@ -62,6 +62,12 @@ defineProps({
 
   .we-do-title {
     text-align: center;
+    margin-top: 0;
+  }
+
+  .we-do-description {
+    text-align: center;
+    margin-right: 0;
   }
 }
 </style>
