@@ -59,6 +59,7 @@ defineProps({
 .title {
   font-size: var(--h2);
   font-weight: 600;
+  margin-top: 1rem;
 }
 
 .description {
