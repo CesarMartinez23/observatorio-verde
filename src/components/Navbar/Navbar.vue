@@ -49,11 +49,6 @@ const toggleMenu = () => {
               >
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link" :to="{ name: 'inicio' }">
-                Proyectos</RouterLink
-              >
-            </li>
-            <li class="nav-item">
               <RouterLink class="nav-link" :to="{ name: 'sobre-nosotros' }">
                 Sobre Nosotros</RouterLink
               >
@@ -66,6 +61,14 @@ const toggleMenu = () => {
             <li class="nav-item">
               <RouterLink class="nav-link" :to="{ name: 'directorio' }">
                 Directorio</RouterLink
+              >
+            </li>
+            <li class="nav-item">
+              <RouterLink
+                class="nav-link"
+                :to="{ name: 'iniciativas-medioambientales' }"
+              >
+                Iniciativas Medioambientales</RouterLink
               >
             </li>
             <span class="nav-item button-contact-mobile" style="float: right">

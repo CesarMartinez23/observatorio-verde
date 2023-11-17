@@ -10,6 +10,11 @@ const router = createRouter({
       component: HomeView
     },
     {
+      path: '/iniciativas-medioambientales',
+      name: 'iniciativas-medioambientales',
+      component: () => import('../views/ProjectsView.vue')
+    },
+    {
       path: '/sobre-nosotros',
       name: 'sobre-nosotros',
       component: () => import('../views/AboutUsView.vue')
