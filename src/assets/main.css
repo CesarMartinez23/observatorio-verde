@@ -31,14 +31,14 @@
   --card4-gradient-color2: #38ef7d;
 
   /* Font Size */
-  --h1: 4.8rem;
-  --h2: 2.8rem;
-  --h3: 2.2rem;
+  --h1: 3rem;
+  --h2: 2rem;
+  --h3: 1.8rem;
 
   /* Text Size */
   --title-counter: 4rem;
-  --text: 1.9rem;
-  --paragraph: 1.6rem;
+  --text: 1.6rem;
+  --paragraph: 1.4rem;
 
   /* Icons Size */
   --icons: 2rem;
@@ -111,4 +111,20 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
+}
+
+table {
+  font-size: var(--paragraph);
+}
+
+.form-check {
+  font-size: var(--paragraph);
+  text-align: left;
+}
+
+.filter-title {
+  font-size: var(--paragraph);
+  font-weight: bold;
+  text-align: left;
+  margin-top: 2rem
 }

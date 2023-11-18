@@ -10,7 +10,7 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/iniciativas-medioambientales',
+      path: '/iniciativas',
       name: 'iniciativas-medioambientales',
       component: () => import('../views/ProjectsView.vue')
     },
@@ -33,6 +33,11 @@ const router = createRouter({
       path: '/directorio',
       name: 'directorio',
       component: () => import('../views/DirectoryView.vue')
+    },
+    {
+      path: '/estadisticas',
+      name: 'estadisticas',
+      component: () => import('../views/DashboardView.vue')
     }
   ]
 })

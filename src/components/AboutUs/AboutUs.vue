@@ -1,4 +1,6 @@
 <template>
+  <div class="custom"></div>
+
   <main class="custom-container d-flex justify-content-between flex-wrap">
     <div class="container">
       <div class="row">
@@ -16,7 +18,7 @@
             <i class="bi bi-layers-fill" />
           </div>
           <p class="mini-section-title">Conoce m&aacute;s</p>
-          <h1 class="section-title">Sobre Nosotros</h1>
+          <h1 class="section-title">Historia</h1>
           <p class="content-description ps-lg-4">
             A finales del año 2019, la Universidad Gerardo Barrios, a través de
             la Vicerrectoría de Investigación presentó el Observatorio Verde de
@@ -44,5 +46,21 @@
     margin-bottom: 2.5rem;
     height: 30rem;
   }
+}
+.custom {
+  background-image: url("img/fondo.png");
+  background-size: 100%;
+  background-position: center;
+  height: 40rem;
+  /*background: linear-gradient(to bottom left,var(--card4-gradient-color1),var(--card4-gradient-color2));*/
+}
+.text-subtitle {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--black);
+  letter-spacing: var(--letter-spacing);
+  margin-top: 3px;
+  color: var(--green-900);
+  text-align: center;
 }
 </style>
