@@ -53,6 +53,15 @@ const toggleMenu = () => {
                 Sobre Nosotros</RouterLink
               >
             </li>
+            
+            <li class="nav-item">
+              <RouterLink
+                class="nav-link"
+                :to="{ name: 'iniciativas-medioambientales' }"
+              >
+                Iniciativas</RouterLink
+              >
+            </li>
             <li class="nav-item">
               <RouterLink class="nav-link" :to="{ name: 'ugb-verde' }">
                 UGB Verde</RouterLink
@@ -64,11 +73,8 @@ const toggleMenu = () => {
               >
             </li>
             <li class="nav-item">
-              <RouterLink
-                class="nav-link"
-                :to="{ name: 'iniciativas-medioambientales' }"
-              >
-                Iniciativas Medioambientales</RouterLink
+              <RouterLink class="nav-link" :to="{ name: 'estadisticas' }">
+                Estadísticas</RouterLink
               >
             </li>
             <span class="nav-item button-contact-mobile" style="float: right">

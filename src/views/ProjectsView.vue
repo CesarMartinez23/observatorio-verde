@@ -13,8 +13,8 @@ console.log(projectsStore.projects);
       <div class="section-icon">
         <i class="bi bi-layers-fill" />
       </div>
-      <p class="mini-section-title">Iniciativas Medioambientales</p>
-      <h1 class="section-title">Proyectos</h1>
+      <p class="mini-section-title">Proyectos</p>
+      <h1 class="section-title">Iniciativas Medioambientales</h1>
     </div>
 
     <div class="container">

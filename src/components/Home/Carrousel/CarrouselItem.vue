@@ -30,7 +30,6 @@ defineProps({
       </a>
     </div>
     <div class="info">
-      <span>Ejecutamos Proyectos Para Preservar....</span>
     </div>
   </div>
 </template>

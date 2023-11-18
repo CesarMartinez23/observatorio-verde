@@ -1,10 +1,14 @@
 <script setup>
+import {useProjectsStore} from '../../stores/projects'
+
 defineProps({
   project: {
     type: Object,
     required: true,
   },
 });
+
+const projectD = useProjectsStore()
 </script>
 
 <template>
@@ -13,7 +17,7 @@ defineProps({
       <img
         :src="[
           project.imagesproject_set[0]
-            ? project.imagesproject_set[0].image_project.url
+            ?  project.imagesproject_set[0].image_project
             : '/imageNotFound.jpg',
         ]"
         class="card-img-top"
@@ -22,7 +26,8 @@ defineProps({
 
       <div class="card-body">
         <h5 class="card-title">{{ project.name }}</h5>
-        <button class="btn">Más información</button>
+        <!--button class="btn" @click="projectD.getProjectsById(project.id)">Más información</button-->
+        <p class="content-description">{{  project.description }}</p>
       </div>
     </div>
   </div>
@@ -86,7 +91,7 @@ defineProps({
   background-color: var(--green-900);
   color: var(--white);
   transition: transform 0.3s ease, background-color 0.3s ease;
-  font-size: 2rem;
+  font-size: 1.5em;
 }
 
 .project-card .btn:hover {
