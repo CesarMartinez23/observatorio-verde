@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted, defineProps, computed, watch } from "vue";
+import { ref, onMounted, computed, watch } from "vue";
 import { useStatsStore } from "../../stores/stats";
 
 const {
@@ -40,6 +40,7 @@ const fetchData = async () => {
     loading.value = false;
   }
 };
+
 const resetFilters = () => {
   perPage.value = propPerPage || 10;
   page.value = propPage || 1;
@@ -145,7 +146,7 @@ onMounted(() => {
       <div class="right-aligned-content"></div>
 
       <!--Start filters-->
-      <div class="row" style="margin-left: 1rem;">
+      <div class="row" style="margin-left: 1rem">
         <div class="col-lg-3">
           <!--MATERIAL-->
           <p class="filter-title">Material</p>
@@ -420,7 +421,7 @@ option:hover {
   color: #fff;
 }
 .btnClear {
-  margin-right: 10px;
+  margin-right: 1rem;
 }
 .card-title {
   font-family: var(--font);

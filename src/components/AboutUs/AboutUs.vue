@@ -1,6 +1,5 @@
 <template>
   <div class="custom"></div>
-
   <main class="custom-container d-flex justify-content-between flex-wrap">
     <div class="container">
       <div class="row">
@@ -41,26 +40,18 @@
   background-color: var(--f4);
 }
 
+.custom {
+  background-image: url("img/fondo.png");
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  /*background: linear-gradient(to bottom left,var(--card4-gradient-color1),var(--card4-gradient-color2));*/
+}
+
 @media (max-width: 992px) {
   .video {
     margin-bottom: 2.5rem;
     height: 30rem;
   }
-}
-.custom {
-  background-image: url("img/fondo.png");
-  background-size: 100%;
-  background-position: center;
-  height: 40rem;
-  /*background: linear-gradient(to bottom left,var(--card4-gradient-color1),var(--card4-gradient-color2));*/
-}
-.text-subtitle {
-  font-size: 28px;
-  font-weight: 700;
-  color: var(--black);
-  letter-spacing: var(--letter-spacing);
-  margin-top: 3px;
-  color: var(--green-900);
-  text-align: center;
 }
 </style>

@@ -101,14 +101,13 @@
 }
 
 .row {
-  margin-left: -5px;
-  margin-right: -5px;
+  margin: 0 -0.5rem;
 }
 
 .column {
   float: left;
   width: 20%;
-  padding: 5px;
+  padding: 0.5rem;
 }
 
 /* Clearfix (clear floats) */
@@ -122,12 +121,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
-  border: 1px solid #ddd;
+  border: 0.1rem solid #ddd;
 }
 
 th,
 td {
-  padding: 16px;
+  padding: 1.6rem;
 }
 
 tr:nth-child(even) {
