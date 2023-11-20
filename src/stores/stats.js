@@ -9,8 +9,14 @@ export const useStatsStore = defineStore("stats", () => {
     return await apiService.getStats(perPage, page, type, material, range, year)
   }
 
+  //get stats by material_type
+  async function getStatsByMaterialType(material_type) {
+    return await apiService.getByMaterialType(material_type)
+  }
+
   return {
-    getStatsByFilter
+    getStatsByFilter,
+    getStatsByMaterialType
   }
 
 })

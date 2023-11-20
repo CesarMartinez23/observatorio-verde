@@ -1,7 +1,9 @@
 <script setup>
 import StatsTable from "../components/Stats/StatsTable.vue";
-import StatsGrahics from "../components/Stats/StatsGrahics.vue";
+import StatsGrahics from "../components/Stats/StatsBarGraphic.vue";
+import StatsPieGraphic from "../components/Stats/StatsPieGraphic.vue";
 import GeneralStats from "../components/Stats/GeneralStats.vue";
+
 import { ref } from "vue";
 
 // default values for properties (filters in url)
@@ -17,7 +19,10 @@ const selectedYear = ref(null);
   <section class="custom-container">
     <div class="container">
       <GeneralStats />
-      <StatsGrahics />
+      <div class="row">
+        <StatsGrahics />
+        <StatsPieGraphic />
+      </div>      
       <StatsTable
         :per-page="perPage"
         :page="page"

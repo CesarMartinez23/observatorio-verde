@@ -292,7 +292,7 @@ onMounted(() => {
           <th>Año</th>
         </thead>
         <tbody>
-          <tr v-for="stat in statsData['data']?.results" :key="stat.id">
+          <tr v-for="stat in statsData['data']?.results.stats" :key="stat.id">
             <td>{{ stat.material_type.name }}</td>
             <td>{{ stat.range.description }}</td>
             <td>{{ stat.type.name }}</td>
@@ -352,39 +352,11 @@ onMounted(() => {
   font-family: var(--font);
   font-size: var(--paragraph);
 }
-
-.pagination > li > a:focus,
-.pagination > li > a:hover,
-.pagination > li > span:focus,
-.pagination > li > span:hover {
-  color: #0ca554;
-  background-color: #eee;
-  border-color: #ddd;
-  cursor: pointer;
-}
-
-.pagination > .active > a {
-  color: white;
-  background-color: #0ca554;
-  border: solid 1px #0ca554;
-}
-
-.pagination > .active > a:hover {
-  background-color: #0ca554;
-  border: solid 1px #0ca554;
-  color: #fff;
-  cursor: pointer;
-}
-
-.form-check-input:checked {
-  background-color: #0ca554;
-  border-color: #0ca554;
-}
 table {
   margin-top: 3rem;
 }
 table > thead {
-  background-color: #0ca554;
+  background-color: #0D6EFD;
   color: #fff;
 }
 

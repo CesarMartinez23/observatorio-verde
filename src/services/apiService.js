@@ -15,4 +15,9 @@ export default {
   getStats(perPage, page, type, material, range, year) {
     return api.get(`/stats/?per_page=${perPage}&page=${page}&type__in=${type}&material_type__in=${material}&range__in=${range}&year__icontains=${year}`)
   },
+
+  //endpoint to get data by material type
+  getByMaterialType(material_type) {
+    return api.get(`/stats/sumByMaterialType/?material_type=${material_type}`)
+  }
 }
