@@ -84,7 +84,7 @@ const getSumFromAllYears = computed(() => {
           color,
         }"
       >
-        {{ getSumFromAllYears }} lbs
+        {{ getSumFromAllYears }} Lb
       </h1>
       <p class="content-description pDetail">{{ title }}</p>
     </div>

@@ -18,6 +18,7 @@ const statsData = ref({});
 const loading = ref(false);
 
 const material = ref(propMaterial || []);
+const buttonText = ref("Todos");
 
 const fetchData = async () => {
   try {
@@ -31,15 +32,19 @@ const fetchData = async () => {
 };
 
 //methods to update action click in button filter
-const updateMaterial = (value) => {
+const updateMaterial = (value, text) => {
   material.value = material.value === value ? null : value;
   fetchData();
+  return (buttonText.value = text);
 };
 
-const resetFilter = () => {
+const resetFilter = (text) => {
   material.value = propMaterial || [];
   fetchData();
+  return (buttonText.value = text);
 };
+
+const computedButtonText = computed(() => buttonText.value);
 
 onMounted(() => {
   fetchData(); // Fetch data on component mount
@@ -57,11 +62,22 @@ const dataSource = computed(() => {
 
 const customizeTooltip = (pointInfo) => {
   return {
-    html: `<div><div class='tooltip-header'>${pointInfo.argumentText}</div><div class='tooltip-body'><div class='series-name'><span class='top-series-name'>${pointInfo.points[0].seriesName}</span>: </div><div class='value-text'><span class='top-series-value'>${pointInfo.points[0].valueText}</span>Lb </div><div class='series-name'><span class='bottom-series-name'>${pointInfo.points[1].seriesName}</span>: </div><div class='value-text'><span class='bottom-series-value'>${pointInfo.points[1].valueText}</span>Lb </div></div></div>`,
+    text: `${pointInfo.seriesName} : ${pointInfo.valueText} Libras`,
   };
 };
 
-// console.log(dataSource);
+const customizeLabel = () => {
+  return {
+    visible: true,
+    backgroundColor: "#1E90FF",
+    customizeText({ valueText }) {
+      return `${valueText} Lb`;
+    },
+  };
+};
+const customizeText = ({ valueText }) => {
+  return `${valueText} Lb`;
+};
 </script>
 <template>
   <div class="col-lg-6">
@@ -73,7 +89,7 @@ const customizeTooltip = (pointInfo) => {
         <!--MATERIAL-->
         <button
           class="btn btn-primary"
-          @click="resetFilter()"
+          @click="resetFilter('Todos')"
           style="border-top-left-radius: 5px; border-bottom-left-radius: 5px"
         >
           Todos
@@ -81,7 +97,7 @@ const customizeTooltip = (pointInfo) => {
         <button
           class="btn btn-primary"
           :class="{ active: material === '1' }"
-          @click="updateMaterial('1')"
+          @click="updateMaterial('1', 'Lata')"
         >
           Lata
         </button>
@@ -89,7 +105,7 @@ const customizeTooltip = (pointInfo) => {
         <button
           class="btn btn-primary"
           :class="{ active: material === '2' }"
-          @click="updateMaterial('2')"
+          @click="updateMaterial('2', 'Botella')"
         >
           Botella
         </button>
@@ -97,7 +113,7 @@ const customizeTooltip = (pointInfo) => {
         <button
           class="btn btn-primary"
           :class="{ active: material === '3' }"
-          @click="updateMaterial('3')"
+          @click="updateMaterial('3', 'Papel')"
         >
           Papel
         </button>
@@ -105,7 +121,7 @@ const customizeTooltip = (pointInfo) => {
         <button
           class="btn btn-primary"
           :class="{ active: material === '4' }"
-          @click="updateMaterial('4')"
+          @click="updateMaterial('4', 'Hierro')"
         >
           Hierro
         </button>
@@ -113,7 +129,7 @@ const customizeTooltip = (pointInfo) => {
         <button
           class="btn btn-primary"
           :class="{ active: material === '5' }"
-          @click="updateMaterial('5')"
+          @click="updateMaterial('5', 'Cartón')"
           style="
             border-right: solid 1px;
             border-top-right-radius: 5px;
@@ -122,25 +138,35 @@ const customizeTooltip = (pointInfo) => {
         >
           Cartón
         </button>
-        <DxChart id="chart" :data-source="dataSource" palette="Soft" title="">
+
+        <DxChart
+          id="chart"
+          :data-source="dataSource"
+          palette="Soft"
+          :customize-label="customizeLabel"
+          :title="computedButtonText"
+        >
           <DxCommonSeriesSettings
             :ignore-empty-points="true"
             argument-field="year"
             type="bar"
-          />
+          >
+            <DxLabel :visible="true">
+              <DxLabel :customize-text="customizeText" />
+            </DxLabel>
+          </DxCommonSeriesSettings>
           <DxSeries value-field="interno" name="Interno" color="#0CA554" />
           <DxSeries value-field="externo" name="Externo" color="#0D6EFD" />
           <DxArgumentAxis>
             <DxLabel overlapping-behavior="stagger" />
           </DxArgumentAxis>
-          <DxTooltip
-            :enabled="true"
-            :shared="true"
-            :customize-tooltip="customizeTooltip"
-          />
-
           <DxLegend vertical-alignment="bottom" horizontal-alignment="center" />
           <DxExport :enabled="true" />
+          <DxTooltip
+            :enabled="true"
+            :customize-tooltip="customizeTooltip"
+            location="edge"
+          />
         </DxChart>
       </div>
     </div>
