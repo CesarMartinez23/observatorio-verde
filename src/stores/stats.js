@@ -14,9 +14,14 @@ export const useStatsStore = defineStore("stats", () => {
     return await apiService.getByMaterialType(material_type)
   }
 
+  async function getTotalsByPeriod(periodId) {
+    return await apiService.getTotalsByPeriod(periodId)
+  }
+
   return {
     getStatsByFilter,
-    getStatsByMaterialType
+    getStatsByMaterialType,
+    getTotalsByPeriod
   }
 
 })

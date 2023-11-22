@@ -19,5 +19,9 @@ export default {
   //endpoint to get data by material type
   getByMaterialType(material_type) {
     return api.get(`/stats/sumByMaterialType/?material_type=${material_type}`)
+  },
+
+  getTotalsByPeriod(periodId) {
+    return api.get(`/stats/sum_by_year_and_range/?range=${periodId}`)
   }
 }
