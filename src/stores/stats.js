@@ -21,7 +21,7 @@ export const useStatsStore = defineStore("stats", () => {
   return {
     getStatsByFilter,
     getStatsByMaterialType,
-    getTotalsByPeriod
+    getTotalsByPeriod,
   }
 
 })

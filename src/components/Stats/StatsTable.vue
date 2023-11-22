@@ -97,7 +97,7 @@ const totalPages = computed(() => {
 
 watch(statsData, (newValue) => {
   const data = newValue["data"];
-  totalPages.value = data ? Math.ceil((data.count || 0) / perPage.value) : 0;
+  // totalPages.value = data ? Math.ceil((data.count || 0) / perPage.value) : 0;
 });
 watch([type, material, range, year], () => {
   fetchData();
@@ -356,7 +356,7 @@ table {
   margin-top: 3rem;
 }
 table > thead {
-  background-color: #0D6EFD;
+  background-color: #0d6efd;
   color: #fff;
 }
 

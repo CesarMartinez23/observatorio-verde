@@ -42,8 +42,8 @@ onMounted(() => {
   fetchData(); // Fetch data on component mount
 });
 
-const roundTwoDecimals = (number) => {
-  return Math.round(number * 100) / 100;
+const convertToKgNotDecimal = (value) => {
+  return Math.round(value / 2.2046);
 };
 
 const getSumFromAllYears = computed(() => {
@@ -53,7 +53,7 @@ const getSumFromAllYears = computed(() => {
 
   if (!yearsKeys.length) return 0;
 
-  return roundTwoDecimals(
+  return convertToKgNotDecimal(
     yearsKeys.reduce((acc, year) => {
       return (
         acc +
@@ -84,7 +84,7 @@ const getSumFromAllYears = computed(() => {
           color,
         }"
       >
-        {{ getSumFromAllYears }} Lb
+        {{ getSumFromAllYears }} Kg
       </h1>
       <p class="content-description pDetail">{{ title }}</p>
     </div>

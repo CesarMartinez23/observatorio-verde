@@ -9,7 +9,6 @@ import {
   DxExport,
   DxLabel,
   DxTooltip,
-  DxValueAxis,
 } from "devextreme-vue/chart";
 
 const { material: propMaterial } = defineProps(["material"]);
@@ -157,9 +156,7 @@ const customizeText = ({ valueText }) => {
           </DxCommonSeriesSettings>
           <DxSeries value-field="interno" name="Interno" color="#0CA554" />
           <DxSeries value-field="externo" name="Externo" color="#0D6EFD" />
-          <DxArgumentAxis>
-            <DxLabel overlapping-behavior="stagger" />
-          </DxArgumentAxis>
+          <DxLabel overlapping-behavior="stagger" />
           <DxLegend vertical-alignment="bottom" horizontal-alignment="center" />
           <DxExport :enabled="true" />
           <DxTooltip

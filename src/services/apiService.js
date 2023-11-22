@@ -23,5 +23,6 @@ export default {
 
   getTotalsByPeriod(periodId) {
     return api.get(`/stats/sum_by_year_and_range/?range=${periodId}`)
-  }
+  },
+
 }
