@@ -61,7 +61,7 @@ const customizeTooltip = (pointInfo) => {
   };
 };
 
-console.log(dataSource);
+// console.log(dataSource);
 </script>
 <template>
   <div class="col-lg-6">
