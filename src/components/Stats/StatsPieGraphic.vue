@@ -77,10 +77,6 @@ const buttonText = computed(() => {
 
         <button
           class="btn btn-primary"
-          style="
-            border-top-left-radius: 0.5rem;
-            border-bottom-left-radius: 0.5rem;
-          "
           @click="updatePeriod('1')"
           :class="{ active: period === '1' }"
         >
@@ -105,7 +101,7 @@ const buttonText = computed(() => {
           :data-source="dataSource"
           type="doughnut"
           :title="buttonText"
-          palette="Soft Pastel"
+          palette="Material"
         >
           <DxSeries argument-field="year" value-field="total_weight">
             <DxLabel

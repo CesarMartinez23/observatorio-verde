@@ -68,7 +68,7 @@ const customizeTooltip = (pointInfo) => {
 const customizeLabel = () => {
   return {
     visible: true,
-    backgroundColor: "#1E90FF",
+    backgroundColor: "#1DB2F5",
     customizeText({ valueText }) {
       return `${valueText} Lb`;
     },
@@ -154,8 +154,8 @@ const customizeText = ({ valueText }) => {
               <DxLabel :customize-text="customizeText" />
             </DxLabel>
           </DxCommonSeriesSettings>
-          <DxSeries value-field="interno" name="Interno" color="#0CA554" />
-          <DxSeries value-field="externo" name="Externo" color="#0D6EFD" />
+          <DxSeries value-field="interno" name="Interno" color="#97C95C" />
+          <DxSeries value-field="externo" name="Externo" color="#1DB2F5" />
           <DxLabel overlapping-behavior="stagger" />
           <DxLegend vertical-alignment="bottom" horizontal-alignment="center" />
           <DxExport :enabled="true" />
